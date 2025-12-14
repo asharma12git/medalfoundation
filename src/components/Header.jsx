@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom'
+
 function Header() {
   return (
     <header style={{ 
@@ -23,8 +25,8 @@ function Header() {
           <div style={{ display: 'flex', alignItems: 'center' }}>
             {/* Company Logo */}
             <div style={{
-              width: '180px',
-              height: '40px',
+              width: '200px',
+              height: '50px',
               backgroundImage: 'url(/src/assets/images/shared/logo.jpg)',
               backgroundSize: 'contain',
               backgroundRepeat: 'no-repeat',
@@ -38,7 +40,7 @@ function Header() {
             alignItems: 'center', 
             gap: '40px'
           }}>
-            <a href="#home" style={{ 
+            <Link to="/" style={{ 
               fontSize: '16px', 
               fontWeight: '500', 
               color: '#6b7280', 
@@ -56,8 +58,8 @@ function Header() {
               e.target.style.transform = 'translateY(0)';
             }}>
               Home
-            </a>
-            <a href="#about" style={{ 
+            </Link>
+            <Link to="/about" style={{ 
               fontSize: '16px', 
               fontWeight: '500', 
               color: '#6b7280', 
@@ -75,7 +77,7 @@ function Header() {
               e.target.style.transform = 'translateY(0)';
             }}>
               About
-            </a>
+            </Link>
             <a href="#members" style={{ 
               fontSize: '16px', 
               fontWeight: '500', 

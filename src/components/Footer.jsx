@@ -16,7 +16,7 @@ function Footer() {
         <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
           <div style={{
             width: '200px',
-            height: '48px',
+            height: '50px',
             backgroundImage: 'url(/src/assets/images/shared/logo.jpg)',
             backgroundSize: 'contain',
             backgroundRepeat: 'no-repeat',

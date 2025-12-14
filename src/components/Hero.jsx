@@ -21,7 +21,7 @@ function Hero() {
 
         {/* Main heading */}
         <h1 style={{
-          fontSize: '2.5rem',
+          fontSize: '24px',
           fontWeight: '400',
           marginBottom: '24px',
           lineHeight: '1.2'
@@ -46,27 +46,24 @@ function Hero() {
         {/* About Foundation Button */}
         <div style={{ textAlign: 'center' }}>
           <button style={{
-            padding: '16px 32px',
-            fontSize: '16px',
+            padding: '12px 24px',
+            fontSize: '14px',
             fontWeight: '500',
             color: 'white',
-            backgroundColor: 'rgba(8, 92, 151, 0.9)',
-            backdropFilter: 'blur(20px)',
-            border: '1px solid rgba(255, 255, 255, 0.3)',
-            borderRadius: '16px',
+            background: 'linear-gradient(135deg, #085c97 0%, #0a6bb0 100%)',
+            border: 'none',
+            borderRadius: '12px',
             cursor: 'pointer',
-            transition: 'all 0.4s ease',
-            boxShadow: '0 8px 32px rgba(0, 0, 0, 0.1), inset 0 1px 0 rgba(255, 255, 255, 0.4)'
+            boxShadow: '0 4px 12px rgba(8, 92, 151, 0.3)',
+            transition: 'all 0.3s ease'
           }}
           onMouseEnter={(e) => {
-            e.target.style.transform = 'translateY(-4px)'
-            e.target.style.boxShadow = '0 16px 48px rgba(0, 0, 0, 0.15), inset 0 1px 0 rgba(255, 255, 255, 0.5)'
-            e.target.style.backgroundColor = 'rgba(8, 92, 151, 0.95)'
+            e.target.style.transform = 'translateY(-2px)'
+            e.target.style.boxShadow = '0 8px 20px rgba(8, 92, 151, 0.4)'
           }}
           onMouseLeave={(e) => {
             e.target.style.transform = 'translateY(0)'
-            e.target.style.boxShadow = '0 8px 32px rgba(0, 0, 0, 0.1), inset 0 1px 0 rgba(255, 255, 255, 0.4)'
-            e.target.style.backgroundColor = 'rgba(8, 92, 151, 0.9)'
+            e.target.style.boxShadow = '0 4px 12px rgba(8, 92, 151, 0.3)'
           }}>
             About the Foundation
           </button>
