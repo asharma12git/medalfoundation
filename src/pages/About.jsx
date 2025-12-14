@@ -22,17 +22,18 @@ function About() {
       }}>
         <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
           <h1 style={{
-            fontSize: '24px',
-            fontWeight: '400',
+            fontSize: '36px',
+            fontWeight: '700',
             color: '#000',
             textAlign: 'center',
             marginBottom: '16px',
             lineHeight: '1.2',
             textDecoration: 'underline',
             textDecorationThickness: '2px',
-            textUnderlineOffset: '8px'
+            textUnderlineOffset: '8px',
+            fontFamily: 'Times, "Times New Roman", serif'
           }}>
-            30 YEARS OF SERVICE TO HUMANITY
+            30 Years Of Service To Humanity
           </h1>
         </div>
       </section>

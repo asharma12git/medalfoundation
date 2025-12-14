@@ -78,7 +78,7 @@ function Header() {
             }}>
               About
             </Link>
-            <a href="#members" style={{ 
+            <Link to="/members" style={{ 
               fontSize: '16px', 
               fontWeight: '500', 
               color: '#6b7280', 
@@ -96,8 +96,8 @@ function Header() {
               e.target.style.transform = 'translateY(0)';
             }}>
               Members
-            </a>
-            <a href="#projects" style={{ 
+            </Link>
+            <Link to="/projects" style={{ 
               fontSize: '16px', 
               fontWeight: '500', 
               color: '#6b7280', 
@@ -115,7 +115,7 @@ function Header() {
               e.target.style.transform = 'translateY(0)';
             }}>
               Projects & Collaborators
-            </a>
+            </Link>
             <a href="#relief" style={{ 
               fontSize: '16px', 
               fontWeight: '500', 
