@@ -1,8 +1,20 @@
 import { Link } from 'react-router-dom'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 
 function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const [isMobile, setIsMobile] = useState(false)
+
+  useEffect(() => {
+    const checkScreenSize = () => {
+      setIsMobile(window.innerWidth < 768)
+    }
+    
+    checkScreenSize()
+    window.addEventListener('resize', checkScreenSize)
+    
+    return () => window.removeEventListener('resize', checkScreenSize)
+  }, [])
 
   return (
     <header style={{ 
@@ -28,7 +40,7 @@ function Header() {
           {/* Logo */}
           <div style={{ display: 'flex', alignItems: 'center' }}>
             <Link to="/" style={{
-              width: window.innerWidth < 640 ? '150px' : '200px',
+              width: isMobile ? '150px' : '200px',
               height: '50px',
               backgroundImage: 'url(/src/assets/images/shared/logo.jpg)',
               backgroundSize: 'contain',
@@ -41,7 +53,7 @@ function Header() {
 
           {/* Desktop Navigation */}
           <nav style={{ 
-            display: window.innerWidth < 768 ? 'none' : 'flex',
+            display: isMobile ? 'none' : 'flex',
             alignItems: 'center', 
             gap: '40px'
           }}>
@@ -165,7 +177,7 @@ function Header() {
           <button 
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             style={{
-              display: window.innerWidth < 768 ? 'flex' : 'none',
+              display: isMobile ? 'flex' : 'none',
               alignItems: 'center',
               justifyContent: 'center',
               width: '40px',
@@ -182,7 +194,7 @@ function Header() {
 
           {/* Desktop CTA Button */}
           <div style={{ 
-            display: window.innerWidth < 768 ? 'none' : 'flex',
+            display: isMobile ? 'none' : 'flex',
             alignItems: 'center' 
           }}>
             <Link to="/contact" style={{ textDecoration: 'none' }}>
@@ -213,7 +225,7 @@ function Header() {
           </div>
 
           {/* Mobile Menu Overlay */}
-          {isMenuOpen && (
+          {isMenuOpen && isMobile && (
             <div style={{
               position: 'absolute',
               top: '100%',
@@ -222,8 +234,7 @@ function Header() {
               backgroundColor: 'white',
               borderBottom: '1px solid #f3f4f6',
               boxShadow: '0 4px 12px rgba(0, 0, 0, 0.1)',
-              zIndex: 50,
-              display: window.innerWidth < 768 ? 'block' : 'none'
+              zIndex: 50
             }}>
               <nav style={{
                 display: 'flex',
