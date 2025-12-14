@@ -93,7 +93,7 @@ function ReliefHumanitarian() {
                 flex: isSmallMobile ? 'none' : isMobile ? '1' : 'none'
               }}>
                 <img 
-                  src="/src/assets/images/pages/relief-and-humanitarian-work/Father-Marshall-D-Moran.jpg" 
+                  src="/assets/images/pages/relief-and-humanitarian-work/Father-Marshall-D-Moran.jpg" 
                   alt="Father Marshall D. Moran" 
                   style={{
                     width: '100%',
@@ -115,7 +115,7 @@ function ReliefHumanitarian() {
                 flex: isSmallMobile ? 'none' : isMobile ? '1' : 'none'
               }}>
                 <img 
-                  src="/src/assets/images/pages/relief-and-humanitarian-work/Father-Moran-With-Students.jpg" 
+                  src="/assets/images/pages/relief-and-humanitarian-work/Father-Moran-With-Students.jpg" 
                   alt="Father Moran With Students" 
                   style={{
                     width: '100%',
@@ -194,7 +194,7 @@ function ReliefHumanitarian() {
                 flex: isSmallMobile ? 'none' : isMobile ? '1' : 'none'
               }}>
                 <img 
-                  src="/src/assets/images/pages/relief-and-humanitarian-work/Logo-F.-Moran-Education-Fund.jpg" 
+                  src="/assets/images/pages/relief-and-humanitarian-work/Logo-F.-Moran-Education-Fund.jpg" 
                   alt="Logo F. Moran Education Fund" 
                   style={{
                     width: '100%',
@@ -216,7 +216,7 @@ function ReliefHumanitarian() {
                 flex: isSmallMobile ? 'none' : isMobile ? '1' : 'none'
               }}>
                 <img 
-                  src="/src/assets/images/pages/relief-and-humanitarian-work/SCR-20250202-ldcq.jpg" 
+                  src="/assets/images/pages/relief-and-humanitarian-work/SCR-20250202-ldcq.jpg" 
                   alt="Relief Work Image" 
                   style={{
                     width: '100%',
@@ -248,7 +248,7 @@ function ReliefHumanitarian() {
               boxShadow: '0 4px 12px rgba(0, 0, 0, 0.08), 0 2px 4px rgba(0, 0, 0, 0.06)'
             }}>
               <img 
-                src="/src/assets/images/pages/relief-and-humanitarian-work/Collage-2.jpg" 
+                src="/assets/images/pages/relief-and-humanitarian-work/Collage-2.jpg" 
                 alt="Collage 2" 
                 style={{
                   width: '100%',
@@ -305,7 +305,7 @@ function ReliefHumanitarian() {
             marginBottom: isMobile ? '30px' : '40px'
           }}>
             <img 
-              src="/src/assets/images/pages/relief-and-humanitarian-work/COLLAGE.jpg" 
+              src="/assets/images/pages/relief-and-humanitarian-work/COLLAGE.jpg" 
               alt="COLLAGE" 
               style={{
                 width: '100%',

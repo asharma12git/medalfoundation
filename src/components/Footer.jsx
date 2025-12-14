@@ -50,7 +50,7 @@ function Footer() {
           <Link to="/" onClick={() => window.scrollTo(0, 0)} style={{
             width: isMobile ? '150px' : '200px',
             height: '50px',
-            backgroundImage: 'url(/src/assets/images/shared/logo.jpg)',
+            backgroundImage: 'url(/assets/images/shared/logo.jpg)',
             backgroundSize: 'contain',
             backgroundRepeat: 'no-repeat',
             backgroundPosition: 'center',

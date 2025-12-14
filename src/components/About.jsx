@@ -5,7 +5,7 @@ function About() {
       <div style={{
         width: '100%',
         height: '60vh',
-        backgroundImage: 'url(/src/assets/images/pages/about/34-2.jpg)',
+        backgroundImage: 'url(/assets/images/pages/about/34-2.jpg)',
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat'

@@ -81,7 +81,7 @@ function About() {
             marginBottom: isMobile ? '30px' : '40px'
           }}>
             <img 
-              src="/src/assets/images/shared/medal-30.png" 
+              src="/assets/images/shared/medal-30.png" 
               alt="Medal Foundation 30 Years" 
               style={{
                 width: isMobile ? '150px' : '200px',

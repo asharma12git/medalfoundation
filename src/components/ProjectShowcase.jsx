@@ -32,24 +32,24 @@ function ProjectShowcase() {
 
   const currentProjects = {
     mainImages: [
-      "/src/assets/images/pages/home/fartooyoung-hami-sana-chau.jpg",
-      "/src/assets/images/pages/home/join-the-movvement.jpg"
+      "/assets/images/pages/home/fartooyoung-hami-sana-chau.jpg",
+      "/assets/images/pages/home/join-the-movvement.jpg"
     ],
     logos: [
-      "/src/assets/images/shared/medal-30.png",
-      "/src/assets/images/pages/home/upahar.jpg",
-      "/src/assets/images/pages/projects-and-collaborators/past-and-present-colaborators/Govt-Nepal.png",
-      "/src/assets/images/shared/Far-Too-Young-c4.jpg"
+      "/assets/images/shared/medal-30.png",
+      "/assets/images/pages/home/upahar.jpg",
+      "/assets/images/pages/projects-and-collaborators/past-and-present-colaborators/Govt-Nepal.png",
+      "/assets/images/shared/Far-Too-Young-c4.jpg"
     ]
   }
 
   const pastProjects = {
-    main: "/src/assets/images/pages/home/I-helped-save-a-life.jpg",
+    main: "/assets/images/pages/home/I-helped-save-a-life.jpg",
     topImages: [
-      "/src/assets/images/pages/home/maya.jpg",
-      "/src/assets/images/pages/home/katha-bhitra.jpg"
+      "/assets/images/pages/home/maya.jpg",
+      "/assets/images/pages/home/katha-bhitra.jpg"
     ],
-    bottomImage: "/src/assets/images/pages/home/maynati.jpg"
+    bottomImage: "/assets/images/pages/home/maynati.jpg"
   }
 
   return (
@@ -260,7 +260,7 @@ function ProjectShowcase() {
               <div style={{
                 width: '100%',
                 aspectRatio: isSmallMobile ? '1/1' : isTablet ? '3/2' : '4/3',
-                backgroundImage: 'url(/src/assets/images/pages/home/social-welfare-council.png)',
+                backgroundImage: 'url(/assets/images/pages/home/social-welfare-council.png)',
                 backgroundSize: 'contain',
                 backgroundRepeat: 'no-repeat',
                 backgroundPosition: 'center'
@@ -403,7 +403,7 @@ function ProjectShowcase() {
                 <div style={{
                   width: '100%',
                   aspectRatio: isTablet ? '3/2' : '1',
-                  backgroundImage: 'url(/src/assets/images/pages/home/chameli-poster-2.jpg)',
+                  backgroundImage: 'url(/assets/images/pages/home/chameli-poster-2.jpg)',
                   backgroundSize: 'contain',
                   backgroundRepeat: 'no-repeat',
                   backgroundPosition: 'center'
@@ -641,7 +641,7 @@ function ProjectShowcase() {
               <div style={{
                 width: '100%',
                 aspectRatio: '4/3',
-                backgroundImage: 'url(/src/assets/images/pages/home/social-welfare-council.png)',
+                backgroundImage: 'url(/assets/images/pages/home/social-welfare-council.png)',
                 backgroundSize: 'contain',
                 backgroundRepeat: 'no-repeat',
                 backgroundPosition: 'center'
@@ -788,7 +788,7 @@ function ProjectShowcase() {
                 <div style={{
                   width: '100%',
                   aspectRatio: '1',
-                  backgroundImage: 'url(/src/assets/images/pages/home/chameli-poster-2.jpg)',
+                  backgroundImage: 'url(/assets/images/pages/home/chameli-poster-2.jpg)',
                   backgroundSize: '100% 100%',
                   backgroundRepeat: 'no-repeat',
                   backgroundPosition: 'center'
@@ -977,7 +977,7 @@ function ProjectShowcase() {
               <div style={{
                 width: '100%',
                 aspectRatio: '4/3',
-                backgroundImage: 'url(/src/assets/images/pages/home/social-welfare-council.png)',
+                backgroundImage: 'url(/assets/images/pages/home/social-welfare-council.png)',
                 backgroundSize: 'contain',
                 backgroundRepeat: 'no-repeat',
                 backgroundPosition: 'center'
@@ -1096,7 +1096,7 @@ function ProjectShowcase() {
               <div style={{
                 width: '100%',
                 aspectRatio: '1',
-                backgroundImage: 'url(/src/assets/images/pages/home/chameli-poster-2.jpg)',
+                backgroundImage: 'url(/assets/images/pages/home/chameli-poster-2.jpg)',
                 backgroundSize: '100% 100%',
                 backgroundRepeat: 'no-repeat',
                 backgroundPosition: 'center'

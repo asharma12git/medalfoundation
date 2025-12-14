@@ -67,7 +67,7 @@ function Hero() {
           marginBottom: isMobile ? '20px' : '24px'
         }}>
           <img 
-            src="/src/assets/images/shared/favicon.png" 
+            src="/assets/images/shared/favicon.png" 
             alt="Medal Foundation Icon" 
             style={{
               width: isMobile ? '80px' : '120px',

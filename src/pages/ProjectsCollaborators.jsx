@@ -40,7 +40,7 @@ function ProjectsCollaborators() {
           textAlign: 'center'
         }}>
           <img 
-            src="/src/assets/images/shared/medal-30.png" 
+            src="/assets/images/shared/medal-30.png" 
             alt="Medal Foundation 30 Years" 
             style={{
               width: isMobile ? '200px' : '300px',
@@ -276,7 +276,7 @@ function ProjectsCollaborators() {
               textAlign: 'left'
             }}>
               <img 
-                src="/src/assets/images/pages/projects-and-collaborators/past-and-present-colaborators/swc.webp" 
+                src="/assets/images/pages/projects-and-collaborators/past-and-present-colaborators/swc.webp" 
                 alt="Social Welfare Council Nepal" 
                 style={{
                   width: isMobile ? '200px' : '300px',
@@ -318,7 +318,7 @@ function ProjectsCollaborators() {
               padding: '10px'
             }}>
               <img 
-                src="/src/assets/images/pages/projects-and-collaborators/past-and-present-colaborators/Govt-Nepal.png" 
+                src="/assets/images/pages/projects-and-collaborators/past-and-present-colaborators/Govt-Nepal.png" 
                 alt="Government of Nepal" 
                 style={{
                   width: '100%',
@@ -336,7 +336,7 @@ function ProjectsCollaborators() {
               padding: '10px'
             }}>
               <img 
-                src="/src/assets/images/pages/projects-and-collaborators/past-and-present-colaborators/UKAID.png" 
+                src="/assets/images/pages/projects-and-collaborators/past-and-present-colaborators/UKAID.png" 
                 alt="UKAID" 
                 style={{
                   width: '100%',
@@ -354,7 +354,7 @@ function ProjectsCollaborators() {
               padding: '10px'
             }}>
               <img 
-                src="/src/assets/images/pages/projects-and-collaborators/past-and-present-colaborators/DFID.png" 
+                src="/assets/images/pages/projects-and-collaborators/past-and-present-colaborators/DFID.png" 
                 alt="DFID" 
                 style={{
                   width: '100%',
@@ -372,7 +372,7 @@ function ProjectsCollaborators() {
               padding: '10px'
             }}>
               <img 
-                src="/src/assets/images/pages/projects-and-collaborators/past-and-present-colaborators/USAID.png" 
+                src="/assets/images/pages/projects-and-collaborators/past-and-present-colaborators/USAID.png" 
                 alt="USAID" 
                 style={{
                   width: '100%',
@@ -390,7 +390,7 @@ function ProjectsCollaborators() {
               padding: '10px'
             }}>
               <img 
-                src="/src/assets/images/pages/projects-and-collaborators/past-and-present-colaborators/bill-and-melinda-gates-foundation.png" 
+                src="/assets/images/pages/projects-and-collaborators/past-and-present-colaborators/bill-and-melinda-gates-foundation.png" 
                 alt="Bill & Melinda Gates Foundation" 
                 style={{
                   width: '100%',
@@ -408,7 +408,7 @@ function ProjectsCollaborators() {
               padding: '10px'
             }}>
               <img 
-                src="/src/assets/images/pages/projects-and-collaborators/past-and-present-colaborators/UN-Women.png" 
+                src="/assets/images/pages/projects-and-collaborators/past-and-present-colaborators/UN-Women.png" 
                 alt="UN Women" 
                 style={{
                   width: '100%',
@@ -428,7 +428,7 @@ function ProjectsCollaborators() {
               padding: '10px'
             }}>
               <img 
-                src="/src/assets/images/pages/projects-and-collaborators/past-and-present-colaborators/PSI.png" 
+                src="/assets/images/pages/projects-and-collaborators/past-and-present-colaborators/PSI.png" 
                 alt="PSI" 
                 style={{
                   width: '100%',
@@ -447,7 +447,7 @@ function ProjectsCollaborators() {
               padding: '10px'
             }}>
               <img 
-                src="/src/assets/images/pages/projects-and-collaborators/past-and-present-colaborators/UNICEF.png" 
+                src="/assets/images/pages/projects-and-collaborators/past-and-present-colaborators/UNICEF.png" 
                 alt="UNICEF" 
                 style={{
                   width: '100%',
@@ -466,7 +466,7 @@ function ProjectsCollaborators() {
               padding: '10px'
             }}>
               <img 
-                src="/src/assets/images/pages/projects-and-collaborators/past-and-present-colaborators/john-hopkins.png" 
+                src="/assets/images/pages/projects-and-collaborators/past-and-present-colaborators/john-hopkins.png" 
                 alt="Johns Hopkins University" 
                 style={{
                   width: '100%',
@@ -485,7 +485,7 @@ function ProjectsCollaborators() {
               padding: '10px'
             }}>
               <img 
-                src="/src/assets/images/pages/projects-and-collaborators/past-and-present-colaborators/UNODC.png" 
+                src="/assets/images/pages/projects-and-collaborators/past-and-present-colaborators/UNODC.png" 
                 alt="UNODC" 
                 style={{
                   width: '100%',
@@ -504,7 +504,7 @@ function ProjectsCollaborators() {
               padding: '10px'
             }}>
               <img 
-                src="/src/assets/images/pages/projects-and-collaborators/past-and-present-colaborators/John-Snow-Inc.png" 
+                src="/assets/images/pages/projects-and-collaborators/past-and-present-colaborators/John-Snow-Inc.png" 
                 alt="John Snow, Inc." 
                 style={{
                   width: '100%',
@@ -523,7 +523,7 @@ function ProjectsCollaborators() {
               padding: '10px'
             }}>
               <img 
-                src="/src/assets/images/pages/projects-and-collaborators/past-and-present-colaborators/World-Bank-Group.png" 
+                src="/assets/images/pages/projects-and-collaborators/past-and-present-colaborators/World-Bank-Group.png" 
                 alt="World Bank Group" 
                 style={{
                   width: '100%',
@@ -543,7 +543,7 @@ function ProjectsCollaborators() {
               padding: '10px'
             }}>
               <img 
-                src="/src/assets/images/pages/projects-and-collaborators/past-and-present-colaborators/SAARC.png" 
+                src="/assets/images/pages/projects-and-collaborators/past-and-present-colaborators/SAARC.png" 
                 alt="SAARC" 
                 style={{
                   width: '100%',
@@ -562,7 +562,7 @@ function ProjectsCollaborators() {
               padding: '10px'
             }}>
               <img 
-                src="/src/assets/images/pages/projects-and-collaborators/past-and-present-colaborators/European-Union.png" 
+                src="/assets/images/pages/projects-and-collaborators/past-and-present-colaborators/European-Union.png" 
                 alt="European Union" 
                 style={{
                   width: '100%',
@@ -581,7 +581,7 @@ function ProjectsCollaborators() {
               padding: '10px'
             }}>
               <img 
-                src="/src/assets/images/pages/projects-and-collaborators/past-and-present-colaborators/UNDP.png" 
+                src="/assets/images/pages/projects-and-collaborators/past-and-present-colaborators/UNDP.png" 
                 alt="UNDP" 
                 style={{
                   width: '100%',
@@ -600,7 +600,7 @@ function ProjectsCollaborators() {
               padding: '10px'
             }}>
               <img 
-                src="/src/assets/images/pages/projects-and-collaborators/past-and-present-colaborators/ADB.png" 
+                src="/assets/images/pages/projects-and-collaborators/past-and-present-colaborators/ADB.png" 
                 alt="ADB" 
                 style={{
                   width: '100%',
@@ -619,7 +619,7 @@ function ProjectsCollaborators() {
               padding: '10px'
             }}>
               <img 
-                src="/src/assets/images/pages/projects-and-collaborators/past-and-present-colaborators/FHI-Family-Health-International.png" 
+                src="/assets/images/pages/projects-and-collaborators/past-and-present-colaborators/FHI-Family-Health-International.png" 
                 alt="FHI Family Health International" 
                 style={{
                   width: '100%',
@@ -638,7 +638,7 @@ function ProjectsCollaborators() {
               padding: '10px'
             }}>
               <img 
-                src="/src/assets/images/pages/projects-and-collaborators/past-and-present-colaborators/JICA.png" 
+                src="/assets/images/pages/projects-and-collaborators/past-and-present-colaborators/JICA.png" 
                 alt="JICA" 
                 style={{
                   width: '100%',
@@ -658,7 +658,7 @@ function ProjectsCollaborators() {
               padding: '10px'
             }}>
               <img 
-                src="/src/assets/images/pages/projects-and-collaborators/past-and-present-colaborators/ICRC-International-Comite-Geneve.png" 
+                src="/assets/images/pages/projects-and-collaborators/past-and-present-colaborators/ICRC-International-Comite-Geneve.png" 
                 alt="ICRC International Committee Geneva" 
                 style={{
                   width: '100%',
@@ -677,7 +677,7 @@ function ProjectsCollaborators() {
               padding: '10px'
             }}>
               <img 
-                src="/src/assets/images/pages/projects-and-collaborators/past-and-present-colaborators/Embassy-Of-India.png" 
+                src="/assets/images/pages/projects-and-collaborators/past-and-present-colaborators/Embassy-Of-India.png" 
                 alt="Embassy of India" 
                 style={{
                   width: '100%',
@@ -696,7 +696,7 @@ function ProjectsCollaborators() {
               padding: '10px'
             }}>
               <img 
-                src="/src/assets/images/pages/projects-and-collaborators/past-and-present-colaborators/BP-Koirala-India-Nepal-Foundation.png" 
+                src="/assets/images/pages/projects-and-collaborators/past-and-present-colaborators/BP-Koirala-India-Nepal-Foundation.png" 
                 alt="BP Koirala India Nepal Foundation" 
                 style={{
                   width: '100%',
@@ -715,7 +715,7 @@ function ProjectsCollaborators() {
               padding: '10px'
             }}>
               <img 
-                src="/src/assets/images/pages/projects-and-collaborators/past-and-present-colaborators/HEALTHRIGHT-INTERNATIONAL.png" 
+                src="/assets/images/pages/projects-and-collaborators/past-and-present-colaborators/HEALTHRIGHT-INTERNATIONAL.png" 
                 alt="HealthRight International" 
                 style={{
                   width: '100%',
@@ -734,7 +734,7 @@ function ProjectsCollaborators() {
               padding: '10px'
             }}>
               <img 
-                src="/src/assets/images/pages/projects-and-collaborators/past-and-present-colaborators/Nepal-Red-Cross-Society.png" 
+                src="/assets/images/pages/projects-and-collaborators/past-and-present-colaborators/Nepal-Red-Cross-Society.png" 
                 alt="Nepal Red Cross Society" 
                 style={{
                   width: '100%',
@@ -753,7 +753,7 @@ function ProjectsCollaborators() {
               padding: '10px'
             }}>
               <img 
-                src="/src/assets/images/pages/projects-and-collaborators/past-and-present-colaborators/Jayanti-Memorial-Trust.png" 
+                src="/assets/images/pages/projects-and-collaborators/past-and-present-colaborators/Jayanti-Memorial-Trust.png" 
                 alt="Jayanti Memorial Trust" 
                 style={{
                   width: '100%',
@@ -773,7 +773,7 @@ function ProjectsCollaborators() {
               padding: '10px'
             }}>
               <img 
-                src="/src/assets/images/pages/projects-and-collaborators/past-and-present-colaborators/THE-CARTER-CENTER.png" 
+                src="/assets/images/pages/projects-and-collaborators/past-and-present-colaborators/THE-CARTER-CENTER.png" 
                 alt="The Carter Center" 
                 style={{
                   width: '100%',
@@ -792,7 +792,7 @@ function ProjectsCollaborators() {
               padding: '10px'
             }}>
               <img 
-                src="/src/assets/images/pages/projects-and-collaborators/past-and-present-colaborators/FLORIDA-STATE-UNIVERSITY.png" 
+                src="/assets/images/pages/projects-and-collaborators/past-and-present-colaborators/FLORIDA-STATE-UNIVERSITY.png" 
                 alt="Florida State University" 
                 style={{
                   width: '100%',
@@ -811,7 +811,7 @@ function ProjectsCollaborators() {
               padding: '10px'
             }}>
               <img 
-                src="/src/assets/images/pages/projects-and-collaborators/past-and-present-colaborators/Jhpiego-An-Affiliate-of-Johns-Hopkins-University.png" 
+                src="/assets/images/pages/projects-and-collaborators/past-and-present-colaborators/Jhpiego-An-Affiliate-of-Johns-Hopkins-University.png" 
                 alt="Jhpiego - An Affiliate of Johns Hopkins University" 
                 style={{
                   width: '100%',
@@ -830,7 +830,7 @@ function ProjectsCollaborators() {
               padding: '10px'
             }}>
               <img 
-                src="/src/assets/images/pages/projects-and-collaborators/past-and-present-colaborators/DOCTORS-OF-THE-WORLD.png" 
+                src="/assets/images/pages/projects-and-collaborators/past-and-present-colaborators/DOCTORS-OF-THE-WORLD.png" 
                 alt="Doctors of the World" 
                 style={{
                   width: '100%',
@@ -849,7 +849,7 @@ function ProjectsCollaborators() {
               padding: '10px'
             }}>
               <img 
-                src="/src/assets/images/pages/projects-and-collaborators/past-and-present-colaborators/swc.webp" 
+                src="/assets/images/pages/projects-and-collaborators/past-and-present-colaborators/swc.webp" 
                 alt="Social Welfare Council Nepal" 
                 style={{
                   width: '100%',
@@ -868,7 +868,7 @@ function ProjectsCollaborators() {
               padding: '10px'
             }}>
               <img 
-                src="/src/assets/images/pages/projects-and-collaborators/past-and-present-colaborators/esara.png" 
+                src="/assets/images/pages/projects-and-collaborators/past-and-present-colaborators/esara.png" 
                 alt="eSARA Nepal" 
                 style={{
                   width: '100%',
@@ -888,7 +888,7 @@ function ProjectsCollaborators() {
               padding: '10px'
             }}>
               <img 
-                src="/src/assets/images/pages/projects-and-collaborators/past-and-present-colaborators/CAPTIVE-DAUGHTERS-FILMS.png" 
+                src="/assets/images/pages/projects-and-collaborators/past-and-present-colaborators/CAPTIVE-DAUGHTERS-FILMS.png" 
                 alt="Captive Daughters Films" 
                 style={{
                   width: '100%',
@@ -907,7 +907,7 @@ function ProjectsCollaborators() {
               padding: '10px'
             }}>
               <img 
-                src="/src/assets/images/pages/projects-and-collaborators/past-and-present-colaborators/Nepal_Medical_Association_Logo.jpg" 
+                src="/assets/images/pages/projects-and-collaborators/past-and-present-colaborators/Nepal_Medical_Association_Logo.jpg" 
                 alt="Nepal Medical Association" 
                 style={{
                   width: '100%',
@@ -926,7 +926,7 @@ function ProjectsCollaborators() {
               padding: '10px'
             }}>
               <img 
-                src="/src/assets/images/shared/Far-Too-Young-c4.jpg" 
+                src="/assets/images/shared/Far-Too-Young-c4.jpg" 
                 alt="Far Too Young" 
                 style={{
                   width: '100%',

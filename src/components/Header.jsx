@@ -44,7 +44,7 @@ function Header() {
             <Link to="/" style={{
               width: isMobile ? '150px' : isTablet ? '170px' : '200px',
               height: '50px',
-              backgroundImage: 'url(/src/assets/images/shared/logo.jpg)',
+              backgroundImage: 'url(/assets/images/shared/logo.jpg)',
               backgroundSize: 'contain',
               backgroundRepeat: 'no-repeat',
               backgroundPosition: 'left center',

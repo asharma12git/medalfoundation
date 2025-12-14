@@ -31,7 +31,7 @@ function Gallery() {
   useEffect(() => {
     // Dynamically import all images from the gallery folder
     const importImages = async () => {
-      const imageModules = import.meta.glob('/src/assets/images/pages/gallery/*', { eager: true })
+      const imageModules = import.meta.glob('/assets/images/pages/gallery/*', { eager: true })
       
       const images = Object.entries(imageModules).map(([path, module]) => {
         // Extract filename without extension for alt text
@@ -195,7 +195,7 @@ function Gallery() {
               color: '#6b7280'
             }}>
               <p style={{ fontSize: '18px', marginBottom: '10px' }}>No images found in gallery</p>
-              <p style={{ fontSize: '14px' }}>Add images to /src/assets/images/pages/gallery/ folder</p>
+              <p style={{ fontSize: '14px' }}>Add images to /assets/images/pages/gallery/ folder</p>
             </div>
           )}
           

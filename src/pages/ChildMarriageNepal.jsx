@@ -70,7 +70,7 @@ function ChildMarriageNepal() {
               marginBottom: '30px'
             }}>
               <img 
-                src="/src/assets/images/pages/home/join-the-movvement.jpg" 
+                src="/assets/images/pages/home/join-the-movvement.jpg" 
                 alt="Join the Movement - Child Marriage Prevention" 
                 style={{
                   width: '100%',
@@ -134,7 +134,7 @@ function ChildMarriageNepal() {
                   boxShadow: '0 2px 8px rgba(0, 0, 0, 0.08), 0 1px 2px rgba(0, 0, 0, 0.06)'
                 }}>
                   <img 
-                    src="/src/assets/images/pages/projects-and-collaborators/past-and-present-colaborators/Govt-Nepal.png" 
+                    src="/assets/images/pages/projects-and-collaborators/past-and-present-colaborators/Govt-Nepal.png" 
                     alt="Government of Nepal" 
                     style={{
                       width: '100%',
@@ -154,7 +154,7 @@ function ChildMarriageNepal() {
                   boxShadow: '0 2px 8px rgba(0, 0, 0, 0.08), 0 1px 2px rgba(0, 0, 0, 0.06)'
                 }}>
                   <img 
-                    src="/src/assets/images/shared/Far-Too-Young-c4.jpg" 
+                    src="/assets/images/shared/Far-Too-Young-c4.jpg" 
                     alt="Far Too Young" 
                     style={{
                       width: '100%',
@@ -174,7 +174,7 @@ function ChildMarriageNepal() {
                   boxShadow: '0 2px 8px rgba(0, 0, 0, 0.08), 0 1px 2px rgba(0, 0, 0, 0.06)'
                 }}>
                   <img 
-                    src="/src/assets/images/shared/medal-30.png" 
+                    src="/assets/images/shared/medal-30.png" 
                     alt="Medal Foundation 30 Years" 
                     style={{
                       width: '100%',
@@ -201,7 +201,7 @@ function ChildMarriageNepal() {
                 transition: 'all 0.3s ease'
               }}>
                 <img 
-                  src="/src/assets/images/pages/home/join-the-movvement.jpg" 
+                  src="/assets/images/pages/home/join-the-movvement.jpg" 
                   alt="Join the Movement - Child Marriage Prevention" 
                   style={{
                     width: '100%',

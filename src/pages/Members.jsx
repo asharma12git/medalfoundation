@@ -81,7 +81,7 @@ function Members() {
               margin: isMobile ? '0 auto 20px auto' : '0'
             }}>
               <img 
-                src="/src/assets/images/pages/members/Ravi-baral.jpg" 
+                src="/assets/images/pages/members/Ravi-baral.jpg" 
                 alt="Ravi Baral" 
                 style={{
                   width: '100%',
@@ -174,7 +174,7 @@ function Members() {
               overflow: 'hidden'
             }}>
               <img 
-                src="/src/assets/images/pages/members/Avi-Sharma.jpg" 
+                src="/assets/images/pages/members/Avi-Sharma.jpg" 
                 alt="Avinash Sharma" 
                 style={{
                   width: '100%',
@@ -256,7 +256,7 @@ function Members() {
               overflow: 'hidden'
             }}>
               <img 
-                src="/src/assets/images/pages/members/Bishwanath-Ghimire.jpg" 
+                src="/assets/images/pages/members/Bishwanath-Ghimire.jpg" 
                 alt="Bishwanath Ghimire" 
                 style={{
                   width: '100%',
@@ -342,7 +342,7 @@ function Members() {
               overflow: 'hidden'
             }}>
               <img 
-                src="/src/assets/images/pages/members/Pradip Upadhyay.jpg" 
+                src="/assets/images/pages/members/Pradip Upadhyay.jpg" 
                 alt="Pradeep Upadhyay" 
                 style={{
                   width: '100%',
@@ -423,7 +423,7 @@ function Members() {
               overflow: 'hidden'
             }}>
               <img 
-                src="/src/assets/images/pages/members/Viplob-Pratik.jpg" 
+                src="/assets/images/pages/members/Viplob-Pratik.jpg" 
                 alt="Viplob Pratik" 
                 style={{
                   width: '100%',
