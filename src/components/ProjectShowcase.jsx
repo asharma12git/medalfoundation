@@ -3,10 +3,12 @@ import { useState, useEffect } from 'react'
 
 function ProjectShowcase() {
   const [isMobile, setIsMobile] = useState(false)
+  const [isSmallMobile, setIsSmallMobile] = useState(false)
 
   useEffect(() => {
     const checkScreenSize = () => {
       setIsMobile(window.innerWidth < 768)
+      setIsSmallMobile(window.innerWidth < 480)
     }
     
     checkScreenSize()
@@ -189,9 +191,9 @@ function ProjectShowcase() {
                 >
                   <div style={{
                     width: '100%',
-                    height: '200px',
+                    aspectRatio: isSmallMobile ? '3/2' : '16/9',
                     backgroundImage: `url(${image})`,
-                    backgroundSize: '100% 100%',
+                    backgroundSize: 'cover',
                     backgroundPosition: 'center'
                   }} />
                 </div>
@@ -235,9 +237,9 @@ function ProjectShowcase() {
             }}>
               <div style={{
                 width: '100%',
-                height: '250px',
+                aspectRatio: isSmallMobile ? '1/1' : '4/3',
                 backgroundImage: 'url(/src/assets/images/pages/home/social-welfare-council.png)',
-                backgroundSize: '100% 100%',
+                backgroundSize: 'cover',
                 backgroundPosition: 'center'
               }} />
             </div>
@@ -300,9 +302,9 @@ function ProjectShowcase() {
             }}>
               <div style={{
                 width: '100%',
-                height: '250px',
+                aspectRatio: isSmallMobile ? '3/2' : '16/9',
                 backgroundImage: `url(${pastProjects.main})`,
-                backgroundSize: '100% 100%',
+                backgroundSize: 'cover',
                 backgroundPosition: 'center'
               }} />
             </div>
