@@ -79,6 +79,12 @@ The site uses a component-based architecture with:
 - Inter font for typography
 - Subtle animations and transitions
 
+## CI/CD
+
+Automated deployment via GitHub Actions:
+- Push to `main` → Auto-deploy to production
+- Manual staging deployment for testing
+
 ## License
 
 This project is licensed under the MIT License.
