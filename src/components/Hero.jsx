@@ -5,26 +5,26 @@ function Hero() {
   return (
     <section style={{ 
       backgroundColor: 'white', 
-      padding: '40px 20px 60px 20px', 
+      padding: window.innerWidth < 640 ? '20px 16px 40px 16px' : '40px 20px 60px 20px', 
       textAlign: 'center' 
     }}>
       <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
         {/* Badge */}
         <div style={{
           display: 'inline-block',
-          padding: '8px 16px',
-          fontSize: '14px',
+          padding: window.innerWidth < 640 ? '6px 12px' : '8px 16px',
+          fontSize: window.innerWidth < 640 ? '12px' : '14px',
           color: '#666',
           backgroundColor: '#eeeeee',
           borderRadius: '20px',
-          marginBottom: '32px'
+          marginBottom: window.innerWidth < 640 ? '24px' : '32px'
         }}>
           Making a difference, one step at a time
         </div>
 
         {/* Main heading */}
         <h1 style={{
-          fontSize: '28px',
+          fontSize: window.innerWidth < 640 ? '24px' : '28px',
           fontWeight: '400',
           marginBottom: '16px',
           lineHeight: '1.2'
@@ -35,13 +35,14 @@ function Hero() {
 
         {/* Subheading */}
         <p style={{
-          fontSize: '16px',
+          fontSize: window.innerWidth < 640 ? '14px' : '16px',
           fontWeight: '500',
           color: '#666',
-          marginBottom: '32px',
+          marginBottom: window.innerWidth < 640 ? '24px' : '32px',
           maxWidth: '800px',
-          margin: '0 auto 32px auto',
-          lineHeight: '1.6'
+          margin: `0 auto ${window.innerWidth < 640 ? '24px' : '32px'} auto`,
+          lineHeight: '1.6',
+          padding: window.innerWidth < 640 ? '0 8px' : '0'
         }}>
           MEDAL was established in 1993 and strives to empower communities through education, awareness, and humanitarian aid. Our core mission is to promote social justice, enhance quality of life, foster sustainable development, and respond to humanitarian crises.
         </p>
@@ -49,14 +50,14 @@ function Hero() {
         {/* Favicon Icon */}
         <div style={{
           textAlign: 'center',
-          marginBottom: '24px'
+          marginBottom: window.innerWidth < 640 ? '20px' : '24px'
         }}>
           <img 
             src="/src/assets/images/shared/favicon.png" 
             alt="Medal Foundation Icon" 
             style={{
-              width: '120px',
-              height: '120px',
+              width: window.innerWidth < 640 ? '80px' : '120px',
+              height: window.innerWidth < 640 ? '80px' : '120px',
               display: 'block',
               margin: '0 auto'
             }} 

@@ -30,7 +30,12 @@ function ProjectShowcase() {
     }}>
       <div style={{ maxWidth: '1400px', margin: '0 auto' }}>
         {/* Section Headers */}
-        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '48px', marginBottom: '60px' }}>
+        <div style={{ 
+          display: 'grid', 
+          gridTemplateColumns: window.innerWidth < 768 ? '1fr' : '1fr 1fr', 
+          gap: window.innerWidth < 768 ? '24px' : '48px', 
+          marginBottom: window.innerWidth < 768 ? '40px' : '60px' 
+        }}>
           <Link to="/child-marriage-in-nepal" style={{ textDecoration: 'none' }}>
             <div style={{
               cursor: 'pointer',
@@ -111,9 +116,18 @@ function ProjectShowcase() {
         </div>
 
         {/* Row 1: Main Images */}
-        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '32px', marginBottom: '40px' }}>
+        <div style={{ 
+          display: 'grid', 
+          gridTemplateColumns: window.innerWidth < 768 ? '1fr' : '1fr 1fr', 
+          gap: '32px', 
+          marginBottom: '40px' 
+        }}>
           {/* Two main images side by side */}
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '6px' }}>
+          <div style={{ 
+            display: 'grid', 
+            gridTemplateColumns: window.innerWidth < 640 ? '1fr' : '1fr 1fr', 
+            gap: '6px' 
+          }}>
             {currentProjects.mainImages.map((image, index) => (
               <div
                 key={index}
@@ -138,7 +152,7 @@ function ProjectShowcase() {
               >
                 <div style={{
                   width: '100%',
-                  height: '500px',
+                  height: window.innerWidth < 640 ? '250px' : '500px',
                   backgroundImage: `url(${image})`,
                   backgroundSize: '100% 100%',
                   backgroundPosition: 'center'
@@ -168,7 +182,7 @@ function ProjectShowcase() {
           }}>
             <div style={{
               width: '100%',
-              height: '500px',
+              height: window.innerWidth < 640 ? '250px' : '500px',
               backgroundImage: `url(${pastProjects.main})`,
               backgroundSize: '100% 100%',
               backgroundPosition: 'center'
@@ -192,11 +206,20 @@ function ProjectShowcase() {
         </div>
 
         {/* Row 2: Social Welfare Council and Past Project Images */}
-        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '32px', marginBottom: '40px' }}>
+        <div style={{ 
+          display: 'grid', 
+          gridTemplateColumns: window.innerWidth < 768 ? '1fr' : '1fr 1fr', 
+          gap: '32px', 
+          marginBottom: '40px' 
+        }}>
           {/* Left side: 4 logos at top + Social Welfare Council Certificate below */}
           <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
-            {/* 4 logos in 4x1 row */}
-            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr 1fr', gap: '15px' }}>
+            {/* 4 logos in responsive grid */}
+            <div style={{ 
+              display: 'grid', 
+              gridTemplateColumns: window.innerWidth < 640 ? '1fr 1fr' : 'repeat(4, 1fr)', 
+              gap: '15px' 
+            }}>
               {currentProjects.logos.map((logo, index) => (
                 <div
                   key={index}
@@ -252,7 +275,7 @@ function ProjectShowcase() {
             }}>
               <div style={{
                 width: '100%',
-                height: '500px',
+                height: window.innerWidth < 640 ? '250px' : '500px',
                 backgroundImage: 'url(/src/assets/images/pages/home/social-welfare-council.png)',
                 backgroundSize: '100% 100%',
                 backgroundPosition: 'center'
@@ -419,7 +442,11 @@ function ProjectShowcase() {
             COVID-19: Health Care Protection Initiative
           </h2>
           
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '40px' }}>
+          <div style={{ 
+            display: 'grid', 
+            gridTemplateColumns: window.innerWidth < 768 ? '1fr' : '1fr 1fr', 
+            gap: '40px' 
+          }}>
             <div style={{
               backgroundColor: '#f5f5f7',
               borderRadius: '24px',

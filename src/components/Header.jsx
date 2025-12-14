@@ -1,6 +1,9 @@
 import { Link } from 'react-router-dom'
+import { useState } from 'react'
 
 function Header() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false)
+
   return (
     <header style={{ 
       backgroundColor: 'white', 
@@ -19,13 +22,13 @@ function Header() {
           display: 'flex', 
           alignItems: 'center', 
           justifyContent: 'space-between', 
-          height: '72px' 
+          height: '72px',
+          position: 'relative'
         }}>
           {/* Logo */}
           <div style={{ display: 'flex', alignItems: 'center' }}>
-            {/* Company Logo */}
             <Link to="/" style={{
-              width: '200px',
+              width: window.innerWidth < 640 ? '150px' : '200px',
               height: '50px',
               backgroundImage: 'url(/src/assets/images/shared/logo.jpg)',
               backgroundSize: 'contain',
@@ -36,9 +39,9 @@ function Header() {
             }} />
           </div>
 
-          {/* Navigation */}
+          {/* Desktop Navigation */}
           <nav style={{ 
-            display: 'flex', 
+            display: window.innerWidth < 768 ? 'none' : 'flex',
             alignItems: 'center', 
             gap: '40px'
           }}>
@@ -158,8 +161,30 @@ function Header() {
             </Link>
           </nav>
 
-          {/* CTA Button */}
-          <div style={{ display: 'flex', alignItems: 'center' }}>
+          {/* Mobile Menu Button */}
+          <button 
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+            style={{
+              display: window.innerWidth < 768 ? 'flex' : 'none',
+              alignItems: 'center',
+              justifyContent: 'center',
+              width: '40px',
+              height: '40px',
+              border: 'none',
+              background: 'none',
+              cursor: 'pointer',
+              fontSize: '24px',
+              color: '#085c97'
+            }}
+          >
+            {isMenuOpen ? '✕' : '☰'}
+          </button>
+
+          {/* Desktop CTA Button */}
+          <div style={{ 
+            display: window.innerWidth < 768 ? 'none' : 'flex',
+            alignItems: 'center' 
+          }}>
             <Link to="/contact" style={{ textDecoration: 'none' }}>
               <button style={{
                 padding: '12px 24px',
@@ -186,6 +211,122 @@ function Header() {
               </button>
             </Link>
           </div>
+
+          {/* Mobile Menu Overlay */}
+          {isMenuOpen && (
+            <div style={{
+              position: 'absolute',
+              top: '100%',
+              left: 0,
+              right: 0,
+              backgroundColor: 'white',
+              borderBottom: '1px solid #f3f4f6',
+              boxShadow: '0 4px 12px rgba(0, 0, 0, 0.1)',
+              zIndex: 50,
+              display: window.innerWidth < 768 ? 'block' : 'none'
+            }}>
+              <nav style={{
+                display: 'flex',
+                flexDirection: 'column',
+                padding: '20px'
+              }}>
+                <Link to="/" 
+                  onClick={() => setIsMenuOpen(false)}
+                  style={{ 
+                    fontSize: '16px', 
+                    fontWeight: '500', 
+                    color: '#6b7280', 
+                    textDecoration: 'none',
+                    padding: '12px 0',
+                    borderBottom: '1px solid #f3f4f6'
+                  }}>
+                  Home
+                </Link>
+                <Link to="/about" 
+                  onClick={() => setIsMenuOpen(false)}
+                  style={{ 
+                    fontSize: '16px', 
+                    fontWeight: '500', 
+                    color: '#6b7280', 
+                    textDecoration: 'none',
+                    padding: '12px 0',
+                    borderBottom: '1px solid #f3f4f6'
+                  }}>
+                  About
+                </Link>
+                <Link to="/members" 
+                  onClick={() => setIsMenuOpen(false)}
+                  style={{ 
+                    fontSize: '16px', 
+                    fontWeight: '500', 
+                    color: '#6b7280', 
+                    textDecoration: 'none',
+                    padding: '12px 0',
+                    borderBottom: '1px solid #f3f4f6'
+                  }}>
+                  Members
+                </Link>
+                <Link to="/projects" 
+                  onClick={() => setIsMenuOpen(false)}
+                  style={{ 
+                    fontSize: '16px', 
+                    fontWeight: '500', 
+                    color: '#6b7280', 
+                    textDecoration: 'none',
+                    padding: '12px 0',
+                    borderBottom: '1px solid #f3f4f6'
+                  }}>
+                  Projects & Collaborators
+                </Link>
+                <Link to="/relief" 
+                  onClick={() => setIsMenuOpen(false)}
+                  style={{ 
+                    fontSize: '16px', 
+                    fontWeight: '500', 
+                    color: '#6b7280', 
+                    textDecoration: 'none',
+                    padding: '12px 0',
+                    borderBottom: '1px solid #f3f4f6'
+                  }}>
+                  Relief and Humanitarian Work
+                </Link>
+                <Link to="/gallery" 
+                  onClick={() => setIsMenuOpen(false)}
+                  style={{ 
+                    fontSize: '16px', 
+                    fontWeight: '500', 
+                    color: '#6b7280', 
+                    textDecoration: 'none',
+                    padding: '12px 0',
+                    borderBottom: '1px solid #f3f4f6'
+                  }}>
+                  Gallery
+                </Link>
+                <Link to="/contact" 
+                  onClick={() => setIsMenuOpen(false)}
+                  style={{ 
+                    display: 'inline-block',
+                    marginTop: '16px',
+                    textDecoration: 'none'
+                  }}>
+                  <button style={{
+                    padding: '12px 24px',
+                    fontSize: '14px',
+                    fontWeight: '500',
+                    color: 'white',
+                    background: 'linear-gradient(135deg, #085c97 0%, #0a6bb0 100%)',
+                    border: 'none',
+                    borderRadius: '25px',
+                    cursor: 'pointer',
+                    width: '100%',
+                    boxShadow: '0 4px 12px rgba(8, 92, 151, 0.3)'
+                  }}>
+                    Contact Us
+                  </button>
+                </Link>
+              </nav>
+            </div>
+          )}
         </div>
       </div>
     </header>

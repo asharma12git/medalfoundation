@@ -11,32 +11,46 @@ function Footer() {
         maxWidth: '1400px', 
         margin: '0 auto',
         display: 'flex',
+        flexDirection: window.innerWidth < 768 ? 'column' : 'row',
         justifyContent: 'space-between',
-        alignItems: 'center'
+        alignItems: window.innerWidth < 768 ? 'center' : 'center',
+        gap: window.innerWidth < 768 ? '24px' : '0'
       }}>
         {/* Logo and Copyright */}
-        <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
+        <div style={{ 
+          display: 'flex', 
+          flexDirection: 'column', 
+          gap: '8px',
+          alignItems: window.innerWidth < 768 ? 'center' : 'flex-start'
+        }}>
           <Link to="/" onClick={() => window.scrollTo(0, 0)} style={{
-            width: '200px',
+            width: window.innerWidth < 640 ? '150px' : '200px',
             height: '50px',
             backgroundImage: 'url(/src/assets/images/shared/logo.jpg)',
             backgroundSize: 'contain',
             backgroundRepeat: 'no-repeat',
-            backgroundPosition: 'left center',
+            backgroundPosition: 'center',
             cursor: 'pointer',
             display: 'block'
           }} />
           <p style={{ 
             fontSize: '14px', 
             color: '#9ca3af',
-            margin: 0
+            margin: 0,
+            textAlign: window.innerWidth < 768 ? 'center' : 'left'
           }}>
             © 2025 All rights reserved.
           </p>
         </div>
 
         {/* Contact Information */}
-        <div style={{ display: 'flex', gap: '32px', alignItems: 'start' }}>
+        <div style={{ 
+          display: 'flex', 
+          flexDirection: window.innerWidth < 768 ? 'column' : 'row',
+          gap: window.innerWidth < 768 ? '20px' : '32px', 
+          alignItems: window.innerWidth < 768 ? 'center' : 'start',
+          textAlign: window.innerWidth < 768 ? 'center' : 'left'
+        }}>
           <div style={{ display: 'flex', flexDirection: 'column', gap: '2px' }}>
             <span style={{ fontSize: '14px', fontWeight: '600', color: '#085c97' }}>Address</span>
             <span style={{ fontSize: '14px', color: '#6b7280' }}>Kathmandu, Nepal</span>
