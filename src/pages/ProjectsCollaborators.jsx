@@ -1,10 +1,38 @@
+import { useState, useEffect } from 'react'
+
 function ProjectsCollaborators() {
+  const [isMobile, setIsMobile] = useState(false)
+  const [isTablet, setIsTablet] = useState(false)
+  const [isSmallMobile, setIsSmallMobile] = useState(false)
+
+  useEffect(() => {
+    const checkScreenSize = () => {
+      setIsMobile(window.innerWidth < 1050)
+      setIsTablet(window.innerWidth < 1200 && window.innerWidth >= 1050)
+      setIsSmallMobile(window.innerWidth < 700)
+    }
+    
+    let timeoutId
+    const debouncedResize = () => {
+      clearTimeout(timeoutId)
+      timeoutId = setTimeout(checkScreenSize, 100)
+    }
+    
+    checkScreenSize()
+    window.addEventListener('resize', debouncedResize)
+    
+    return () => {
+      window.removeEventListener('resize', debouncedResize)
+      clearTimeout(timeoutId)
+    }
+  }, [])
+
   return (
     <div>
       {/* Large Medal Logo and Title Section */}
       <section style={{
         backgroundColor: 'white',
-        padding: '60px 20px'
+        padding: isMobile ? '40px 20px' : '60px 20px'
       }}>
         <div style={{
           maxWidth: '1200px',
@@ -15,15 +43,16 @@ function ProjectsCollaborators() {
             src="/src/assets/images/shared/medal-30.png" 
             alt="Medal Foundation 30 Years" 
             style={{
-              width: '300px',
+              width: isMobile ? '200px' : '300px',
               height: 'auto',
               display: 'block',
-              margin: '0 auto 40px auto'
+              margin: isMobile ? '0 auto 30px auto' : '0 auto 40px auto',
+              transition: 'width 0.3s ease, margin 0.3s ease'
             }} 
           />
           
           <h1 style={{
-            fontSize: '36px',
+            fontSize: isMobile ? '24px' : '36px',
             fontWeight: '700',
             color: '#000',
             textAlign: 'center',
@@ -31,7 +60,8 @@ function ProjectsCollaborators() {
             lineHeight: '1.2',
             borderBottom: '3px solid #085c97',
             paddingBottom: '12px',
-            display: 'inline-block'
+            display: 'inline-block',
+            transition: 'font-size 0.3s ease'
           }}>
             Three Decades of Service
           </h1>
@@ -41,37 +71,39 @@ function ProjectsCollaborators() {
       {/* Paper-like Campaigns Section */}
       <section style={{
         backgroundColor: 'white',
-        padding: '0px 20px 60px 20px'
+        padding: isMobile ? '0px 20px 40px 20px' : '0px 20px 60px 20px'
       }}>
         <div style={{
           maxWidth: '1200px',
           margin: '0 auto',
           backgroundColor: '#fefefe',
-          padding: '60px 40px',
+          padding: isMobile ? '40px 20px' : '60px 40px',
           borderRadius: '8px',
           boxShadow: '0 4px 20px rgba(0, 0, 0, 0.1)',
           border: '1px solid #e5e7eb'
         }}>
           {/* Campaigns Content */}
           <div style={{
-            fontSize: '16px',
+            fontSize: isMobile ? '14px' : '16px',
             lineHeight: '1.8',
             color: '#374151',
-            textAlign: 'justify'
+            textAlign: 'justify',
+            transition: 'font-size 0.3s ease'
           }}>
             <h3 style={{
-              fontSize: '18px',
+              fontSize: isSmallMobile ? '14px' : isTablet ? '16px' : isMobile ? '17px' : '18px',
               fontWeight: '600',
               color: '#085c97',
               marginTop: '0px',
-              marginBottom: '16px'
+              marginBottom: '16px',
+              transition: 'font-size 0.3s ease'
             }}>
               LOCAL AND NATIONAL CAMPAIGNS CONDUCTED:
             </h3>
             
             <ul style={{
-              marginLeft: '20px',
-              marginBottom: '32px',
+              marginLeft: isMobile ? '16px' : '20px',
+              marginBottom: isMobile ? '24px' : '32px',
               listStyleType: 'disc'
             }}>
               <li><strong>IMMUNIZATION:</strong> with UNICEF (1998)</li>
@@ -90,30 +122,32 @@ function ProjectsCollaborators() {
             </ul>
             
             <h3 style={{
-              fontSize: '18px',
+              fontSize: isSmallMobile ? '14px' : isTablet ? '16px' : isMobile ? '17px' : '18px',
               fontWeight: '600',
               color: '#085c97',
-              marginTop: '32px',
-              marginBottom: '16px'
+              marginTop: isMobile ? '24px' : '32px',
+              marginBottom: '16px',
+              transition: 'font-size 0.3s ease, margin 0.3s ease'
             }}>
               AWARD ESTABLISHED:
             </h3>
             
-            <p style={{ marginBottom: '32px' }}>Established by Media Alert and Relief Foundation organizes and gives away Media Alert's EXCELLENCE IN MEDIA AWARDS to the Best Journalist among print, TV, and radio journalists who spread education and awareness on pressing social issues. Chosen by a jury consisting of professional communication and media professionals, three Excellence in Media Awards have been given away so far</p>
+            <p style={{ marginBottom: isMobile ? '24px' : '32px' }}>Established by Media Alert and Relief Foundation organizes and gives away Media Alert's EXCELLENCE IN MEDIA AWARDS to the Best Journalist among print, TV, and radio journalists who spread education and awareness on pressing social issues. Chosen by a jury consisting of professional communication and media professionals, three Excellence in Media Awards have been given away so far</p>
             
             <h3 style={{
-              fontSize: '18px',
+              fontSize: isSmallMobile ? '14px' : isTablet ? '16px' : isMobile ? '17px' : '18px',
               fontWeight: '600',
               color: '#085c97',
-              marginTop: '32px',
-              marginBottom: '16px'
+              marginTop: isMobile ? '24px' : '32px',
+              marginBottom: '16px',
+              transition: 'font-size 0.3s ease, margin 0.3s ease'
             }}>
               AUDIO-VIDEO PRODUCED:
             </h3>
             
             <ul style={{
-              marginLeft: '20px',
-              marginBottom: '32px',
+              marginLeft: isMobile ? '16px' : '20px',
+              marginBottom: isMobile ? '24px' : '32px',
               listStyleType: 'disc'
             }}>
               <li>Kalilai Umerama: Short Film against Child Marriage (2022)</li>
@@ -151,18 +185,19 @@ function ProjectsCollaborators() {
             </ul>
             
             <h3 style={{
-              fontSize: '18px',
+              fontSize: isSmallMobile ? '14px' : isTablet ? '16px' : isMobile ? '17px' : '18px',
               fontWeight: '600',
               color: '#085c97',
-              marginTop: '32px',
-              marginBottom: '16px'
+              marginTop: isMobile ? '24px' : '32px',
+              marginBottom: '16px',
+              transition: 'font-size 0.3s ease, margin 0.3s ease'
             }}>
               Workshops Conducted With Experts:
             </h3>
             
             <ul style={{
-              marginLeft: '20px',
-              marginBottom: '32px',
+              marginLeft: isMobile ? '16px' : '20px',
+              marginBottom: isMobile ? '24px' : '32px',
               listStyleType: 'disc'
             }}>
               <li>Community Outreach through e-learning.</li>
@@ -187,11 +222,11 @@ function ProjectsCollaborators() {
       {/* Past & Present Collaborators Title */}
       <section style={{
         backgroundColor: 'white',
-        padding: '20px 20px 60px 20px'
+        padding: isMobile ? '20px 20px 40px 20px' : '20px 20px 60px 20px'
       }}>
         <div style={{ maxWidth: '1200px', margin: '0 auto', textAlign: 'center' }}>
           <h1 style={{
-            fontSize: '36px',
+            fontSize: isMobile ? '24px' : '36px',
             fontWeight: '700',
             color: '#000',
             textAlign: 'center',
@@ -199,7 +234,8 @@ function ProjectsCollaborators() {
             lineHeight: '1.2',
             borderBottom: '3px solid #085c97',
             paddingBottom: '12px',
-            display: 'inline-block'
+            display: 'inline-block',
+            transition: 'font-size 0.3s ease'
           }}>
             Past & Present Collaborators
           </h1>
@@ -209,13 +245,13 @@ function ProjectsCollaborators() {
       {/* Collaborators Content Section */}
       <section style={{
         backgroundColor: 'white',
-        padding: '0px 20px 60px 20px'
+        padding: isMobile ? '0px 20px 40px 20px' : '0px 20px 60px 20px'
       }}>
         <div style={{
           maxWidth: '1200px',
           margin: '0 auto',
           backgroundColor: '#fefefe',
-          padding: '60px 40px',
+          padding: isMobile ? '40px 20px' : '60px 40px',
           borderRadius: '8px',
           boxShadow: '0 4px 20px rgba(0, 0, 0, 0.1)',
           border: '1px solid #e5e7eb'
@@ -226,11 +262,12 @@ function ProjectsCollaborators() {
             marginBottom: '20px'
           }}>
             <h3 style={{
-              fontSize: '18px',
+              fontSize: isSmallMobile ? '14px' : isTablet ? '16px' : isMobile ? '17px' : '18px',
               fontWeight: '600',
               color: '#085c97',
               marginBottom: '20px',
-              textAlign: 'left'
+              textAlign: 'left',
+              transition: 'font-size 0.3s ease'
             }}>
               AFFILIATION
             </h3>
@@ -242,10 +279,11 @@ function ProjectsCollaborators() {
                 src="/src/assets/images/pages/projects-and-collaborators/past-and-present-colaborators/swc.webp" 
                 alt="Social Welfare Council Nepal" 
                 style={{
-                  width: '300px',
+                  width: isMobile ? '200px' : '300px',
                   maxWidth: '100%',
                   height: 'auto',
-                  display: 'block'
+                  display: 'block',
+                  transition: 'width 0.3s ease'
                 }} 
               />
             </div>
@@ -253,20 +291,21 @@ function ProjectsCollaborators() {
           
           {/* Partner Organizations */}
           <h3 style={{
-            fontSize: '18px',
+            fontSize: isSmallMobile ? '14px' : isTablet ? '16px' : isMobile ? '17px' : '18px',
             fontWeight: '600',
             color: '#085c97',
             marginBottom: '20px',
-            textAlign: 'left'
+            textAlign: 'left',
+            transition: 'font-size 0.3s ease'
           }}>
             PARTNER ORGANIZATIONS
           </h3>
           
-          {/* 6-Column Grid for Logos */}
+          {/* Responsive Grid for Logos */}
           <div style={{
             display: 'grid',
-            gridTemplateColumns: 'repeat(6, 1fr)',
-            gap: '20px',
+            gridTemplateColumns: isSmallMobile ? 'repeat(4, 1fr)' : 'repeat(6, 1fr)',
+            gap: isMobile ? '15px' : '20px',
             alignItems: 'center'
           }}>
             {/* Logo placeholders - will be replaced with actual logos */}

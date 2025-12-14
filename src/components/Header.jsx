@@ -4,10 +4,12 @@ import { useState, useEffect } from 'react'
 function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [isMobile, setIsMobile] = useState(false)
+  const [isTablet, setIsTablet] = useState(false)
 
   useEffect(() => {
     const checkScreenSize = () => {
-      setIsMobile(window.innerWidth < 768)
+      setIsMobile(window.innerWidth < 1050)
+      setIsTablet(window.innerWidth < 1250 && window.innerWidth >= 1050)
     }
     
     checkScreenSize()
@@ -40,7 +42,7 @@ function Header() {
           {/* Logo */}
           <div style={{ display: 'flex', alignItems: 'center' }}>
             <Link to="/" style={{
-              width: isMobile ? '150px' : '200px',
+              width: isMobile ? '150px' : isTablet ? '170px' : '200px',
               height: '50px',
               backgroundImage: 'url(/src/assets/images/shared/logo.jpg)',
               backgroundSize: 'contain',
@@ -55,10 +57,10 @@ function Header() {
           <nav style={{ 
             display: isMobile ? 'none' : 'flex',
             alignItems: 'center', 
-            gap: '40px'
+            gap: isTablet ? '20px' : '40px'
           }}>
             <Link to="/" style={{ 
-              fontSize: '16px', 
+              fontSize: isTablet ? '14px' : '16px', 
               fontWeight: '500', 
               color: '#6b7280', 
               textDecoration: 'none',
@@ -77,7 +79,7 @@ function Header() {
               Home
             </Link>
             <Link to="/about" style={{ 
-              fontSize: '16px', 
+              fontSize: isTablet ? '14px' : '16px', 
               fontWeight: '500', 
               color: '#6b7280', 
               textDecoration: 'none',
@@ -96,7 +98,7 @@ function Header() {
               About
             </Link>
             <Link to="/members" style={{ 
-              fontSize: '16px', 
+              fontSize: isTablet ? '14px' : '16px', 
               fontWeight: '500', 
               color: '#6b7280', 
               textDecoration: 'none',
@@ -115,7 +117,7 @@ function Header() {
               Members
             </Link>
             <Link to="/projects" style={{ 
-              fontSize: '16px', 
+              fontSize: isTablet ? '14px' : '16px', 
               fontWeight: '500', 
               color: '#6b7280', 
               textDecoration: 'none',
@@ -134,7 +136,7 @@ function Header() {
               Projects & Collaborators
             </Link>
             <Link to="/relief" style={{ 
-              fontSize: '16px', 
+              fontSize: isTablet ? '14px' : '16px', 
               fontWeight: '500', 
               color: '#6b7280', 
               textDecoration: 'none',
@@ -153,7 +155,7 @@ function Header() {
               Relief and Humanitarian Work
             </Link>
             <Link to="/gallery" style={{ 
-              fontSize: '16px', 
+              fontSize: isTablet ? '14px' : '16px', 
               fontWeight: '500', 
               color: '#6b7280', 
               textDecoration: 'none',
