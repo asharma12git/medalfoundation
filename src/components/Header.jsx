@@ -259,7 +259,10 @@ function Header() {
                   Home
                 </Link>
                 <Link to="/about" 
-                  onClick={() => setIsMenuOpen(false)}
+                  onClick={() => {
+                    setIsMenuOpen(false);
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                  }}
                   style={{ 
                     fontSize: '16px', 
                     fontWeight: '500', 
@@ -271,7 +274,10 @@ function Header() {
                   About
                 </Link>
                 <Link to="/members" 
-                  onClick={() => setIsMenuOpen(false)}
+                  onClick={() => {
+                    setIsMenuOpen(false);
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                  }}
                   style={{ 
                     fontSize: '16px', 
                     fontWeight: '500', 
@@ -283,7 +289,10 @@ function Header() {
                   Members
                 </Link>
                 <Link to="/projects" 
-                  onClick={() => setIsMenuOpen(false)}
+                  onClick={() => {
+                    setIsMenuOpen(false);
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                  }}
                   style={{ 
                     fontSize: '16px', 
                     fontWeight: '500', 
@@ -295,7 +304,10 @@ function Header() {
                   Projects & Collaborators
                 </Link>
                 <Link to="/relief" 
-                  onClick={() => setIsMenuOpen(false)}
+                  onClick={() => {
+                    setIsMenuOpen(false);
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                  }}
                   style={{ 
                     fontSize: '16px', 
                     fontWeight: '500', 
@@ -307,7 +319,10 @@ function Header() {
                   Relief and Humanitarian Work
                 </Link>
                 <Link to="/gallery" 
-                  onClick={() => setIsMenuOpen(false)}
+                  onClick={() => {
+                    setIsMenuOpen(false);
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                  }}
                   style={{ 
                     fontSize: '16px', 
                     fontWeight: '500', 
@@ -319,7 +334,10 @@ function Header() {
                   Gallery
                 </Link>
                 <Link to="/contact" 
-                  onClick={() => setIsMenuOpen(false)}
+                  onClick={() => {
+                    setIsMenuOpen(false);
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                  }}
                   style={{ 
                     display: 'inline-block',
                     marginTop: '16px',
