@@ -174,7 +174,7 @@ function ProjectShowcase() {
             </Link>
 
             {/* Current Projects Images */}
-            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '6px', marginBottom: '20px' }}>
+            <div style={{ display: 'grid', gridTemplateColumns: '1fr', gap: '6px', marginBottom: '20px' }}>
               {currentProjects.mainImages.map((image, index) => (
                 <div
                   key={index}
