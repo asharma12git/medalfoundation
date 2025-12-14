@@ -27,7 +27,7 @@ function About() {
     <div>
       {/* Full-width hero image */}
       <img 
-        src="src/assets/images/pages/about/about.jpg" 
+        src="/assets/images/pages/about/about.jpg" 
         alt="About Medal Foundation" 
         style={{
           width: '100%',
