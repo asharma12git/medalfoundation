@@ -86,6 +86,7 @@ Automated deployment via AWS CodePipeline:
 - Manual staging deployment for testing
 - CodePipeline: `medalfoundation-production-pipeline`
 - CodeBuild: `medalfoundation-frontend-production`
+- GitHub webhook configured ✅
 
 ## License
 
