@@ -43,12 +43,12 @@ function ProjectShowcase() {
       padding: '0px 20px 60px 20px' 
     }}>
       <div style={{ maxWidth: '1400px', margin: '0 auto' }}>
-        {/* Section Headers */}
+        {/* Desktop: Section Headers */}
         <div style={{ 
-          display: 'grid', 
-          gridTemplateColumns: isMobile ? '1fr' : '1fr 1fr', 
-          gap: isMobile ? '24px' : '48px', 
-          marginBottom: isMobile ? '40px' : '60px' 
+          display: isMobile ? 'none' : 'grid', 
+          gridTemplateColumns: '1fr 1fr', 
+          gap: '48px', 
+          marginBottom: '60px' 
         }}>
           <Link to="/child-marriage-in-nepal" style={{ textDecoration: 'none' }}>
             <div style={{
@@ -132,6 +132,47 @@ function ProjectShowcase() {
         {/* Mobile: Current Projects Section */}
         {isMobile && (
           <div style={{ marginBottom: '60px' }}>
+            {/* Current Projects Header */}
+            <Link to="/child-marriage-in-nepal" style={{ textDecoration: 'none' }}>
+              <div style={{
+                cursor: 'pointer',
+                transition: 'all 0.3s ease',
+                marginBottom: '40px'
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.querySelector('h2').style.color = '#085c97'
+                e.currentTarget.querySelector('h2').style.filter = 'drop-shadow(0 3px 6px rgba(8, 92, 151, 0.3))'
+                e.currentTarget.querySelector('span').style.transform = 'translateX(4px)'
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.querySelector('h2').style.color = '#171717'
+                e.currentTarget.querySelector('h2').style.filter = 'none'
+                e.currentTarget.querySelector('span').style.transform = 'translateX(0)'
+              }}>
+                <h2 style={{
+                  fontSize: '24px',
+                  fontWeight: '600',
+                  color: '#171717',
+                  margin: 0,
+                  textAlign: 'center',
+                  borderBottom: '3px solid #085c97',
+                  paddingBottom: '12px',
+                  transition: 'color 0.2s ease',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  gap: '8px'
+                }}>
+                  Current Projects
+                  <span style={{
+                    fontSize: '20px',
+                    color: '#085c97',
+                    transition: 'transform 0.2s ease'
+                  }}>→</span>
+                </h2>
+              </div>
+            </Link>
+
             {/* Current Projects Images */}
             <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '6px', marginBottom: '20px' }}>
               {currentProjects.mainImages.map((image, index) => (
@@ -206,6 +247,47 @@ function ProjectShowcase() {
         {/* Mobile: Past Projects Section */}
         {isMobile && (
           <div style={{ marginBottom: '60px' }}>
+            {/* Past Projects Header */}
+            <Link to="/projects" style={{ textDecoration: 'none' }}>
+              <div style={{
+                cursor: 'pointer',
+                transition: 'all 0.3s ease',
+                marginBottom: '40px'
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.querySelector('h2').style.color = '#a47c43'
+                e.currentTarget.querySelector('h2').style.filter = 'drop-shadow(0 3px 6px rgba(164, 124, 67, 0.3))'
+                e.currentTarget.querySelector('span').style.transform = 'translateX(4px)'
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.querySelector('h2').style.color = '#171717'
+                e.currentTarget.querySelector('h2').style.filter = 'none'
+                e.currentTarget.querySelector('span').style.transform = 'translateX(0)'
+              }}>
+                <h2 style={{
+                  fontSize: '24px',
+                  fontWeight: '600',
+                  color: '#171717',
+                  margin: 0,
+                  textAlign: 'center',
+                  borderBottom: '3px solid #a47c43',
+                  paddingBottom: '12px',
+                  transition: 'color 0.2s ease',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  gap: '8px'
+                }}>
+                  Past Projects
+                  <span style={{
+                    fontSize: '20px',
+                    color: '#a47c43',
+                    transition: 'transform 0.2s ease'
+                  }}>→</span>
+                </h2>
+              </div>
+            </Link>
+
             {/* I Helped Save a Life */}
             <div style={{
               backgroundColor: 'rgba(255, 255, 255, 0.8)',
