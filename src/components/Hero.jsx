@@ -24,9 +24,9 @@ function Hero() {
 
         {/* Main heading */}
         <h1 style={{
-          fontSize: '24px',
+          fontSize: '28px',
           fontWeight: '400',
-          marginBottom: '24px',
+          marginBottom: '16px',
           lineHeight: '1.2'
         }}>
           <span style={{ color: 'black' }}>Our </span>
@@ -43,8 +43,25 @@ function Hero() {
           margin: '0 auto 32px auto',
           lineHeight: '1.6'
         }}>
-          Media Alert and Relief Foundation was established in 1993 and strives to empower communities through education, awareness, and humanitarian aid. Our core mission is to promote social justice, enhance quality of life, foster sustainable development, and respond to humanitarian crises.
+          MEDAL was established in 1993 and strives to empower communities through education, awareness, and humanitarian aid. Our core mission is to promote social justice, enhance quality of life, foster sustainable development, and respond to humanitarian crises.
         </p>
+
+        {/* Favicon Icon */}
+        <div style={{
+          textAlign: 'center',
+          marginBottom: '24px'
+        }}>
+          <img 
+            src="/src/assets/images/shared/favicon.png" 
+            alt="Medal Foundation Icon" 
+            style={{
+              width: '120px',
+              height: '120px',
+              display: 'block',
+              margin: '0 auto'
+            }} 
+          />
+        </div>
 
         {/* About Foundation Button */}
         <div style={{ textAlign: 'center' }}>
