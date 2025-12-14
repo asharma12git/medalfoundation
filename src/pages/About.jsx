@@ -50,7 +50,7 @@ function About() {
           padding: '60px 40px',
           borderRadius: '8px',
           boxShadow: '0 4px 20px rgba(0, 0, 0, 0.1)',
-          border: '1px solid #e5e7eb'
+          border: '1px solid rgba(180, 83, 9, 0.4)'
         }}>
           {/* Centered Logo */}
           <div style={{

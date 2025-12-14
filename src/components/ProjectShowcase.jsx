@@ -31,39 +31,83 @@ function ProjectShowcase() {
         <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '48px', marginBottom: '60px' }}>
           <div style={{
             textAlign: 'center',
-            padding: '16px 0',
-            background: 'linear-gradient(135deg, rgba(8, 92, 151, 0.1) 0%, rgba(8, 92, 151, 0.05) 100%)',
+            padding: '16px 24px',
+            background: 'linear-gradient(135deg, rgba(8, 92, 151, 0.3) 0%, rgba(8, 92, 151, 0.18) 100%)',
             backdropFilter: 'blur(10px)',
             borderRadius: '12px',
-            border: '1px solid rgba(8, 92, 151, 0.2)',
-            boxShadow: '0 4px 12px rgba(8, 92, 151, 0.1)'
+            border: '1px solid rgba(8, 92, 151, 0.5)',
+            boxShadow: '0 4px 12px rgba(8, 92, 151, 0.2)',
+            cursor: 'pointer',
+            transition: 'all 0.3s ease',
+            position: 'relative'
+          }}
+          onMouseEnter={(e) => {
+            e.currentTarget.style.transform = 'translateY(-2px)'
+            e.currentTarget.style.boxShadow = '0 8px 20px rgba(8, 92, 151, 0.2)'
+            e.currentTarget.style.background = 'linear-gradient(135deg, rgba(8, 92, 151, 0.4) 0%, rgba(8, 92, 151, 0.25) 100%)'
+          }}
+          onMouseLeave={(e) => {
+            e.currentTarget.style.transform = 'translateY(0)'
+            e.currentTarget.style.boxShadow = '0 4px 12px rgba(8, 92, 151, 0.1)'
+            e.currentTarget.style.background = 'linear-gradient(135deg, rgba(8, 92, 151, 0.3) 0%, rgba(8, 92, 151, 0.18) 100%)'
           }}>
             <h2 style={{
               fontSize: '24px',
               fontWeight: '500',
               color: '#171717',
-              margin: 0
+              margin: 0,
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              gap: '8px'
             }}>
               Current Projects
+              <span style={{
+                fontSize: '16px',
+                color: '#085c97',
+                transition: 'transform 0.3s ease'
+              }}>→</span>
             </h2>
           </div>
           
           <div style={{
             textAlign: 'center',
-            padding: '16px 0',
-            background: 'linear-gradient(135deg, rgba(218, 165, 32, 0.15) 0%, rgba(218, 165, 32, 0.08) 100%)',
+            padding: '16px 24px',
+            background: 'linear-gradient(135deg, rgba(218, 165, 32, 0.35) 0%, rgba(218, 165, 32, 0.22) 100%)',
             backdropFilter: 'blur(10px)',
             borderRadius: '12px',
-            border: '1px solid rgba(218, 165, 32, 0.3)',
-            boxShadow: '0 4px 12px rgba(218, 165, 32, 0.2)'
+            border: '1px solid rgba(218, 165, 32, 0.6)',
+            boxShadow: '0 4px 12px rgba(218, 165, 32, 0.3)',
+            cursor: 'pointer',
+            transition: 'all 0.3s ease',
+            position: 'relative'
+          }}
+          onMouseEnter={(e) => {
+            e.currentTarget.style.transform = 'translateY(-2px)'
+            e.currentTarget.style.boxShadow = '0 8px 20px rgba(218, 165, 32, 0.3)'
+            e.currentTarget.style.background = 'linear-gradient(135deg, rgba(218, 165, 32, 0.5) 0%, rgba(218, 165, 32, 0.32) 100%)'
+          }}
+          onMouseLeave={(e) => {
+            e.currentTarget.style.transform = 'translateY(0)'
+            e.currentTarget.style.boxShadow = '0 4px 12px rgba(218, 165, 32, 0.2)'
+            e.currentTarget.style.background = 'linear-gradient(135deg, rgba(218, 165, 32, 0.35) 0%, rgba(218, 165, 32, 0.22) 100%)'
           }}>
             <h2 style={{
               fontSize: '24px',
               fontWeight: '500',
               color: '#171717',
-              margin: 0
+              margin: 0,
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              gap: '8px'
             }}>
               Past Projects
+              <span style={{
+                fontSize: '16px',
+                color: '#DAA520',
+                transition: 'transform 0.3s ease'
+              }}>→</span>
             </h2>
           </div>
         </div>

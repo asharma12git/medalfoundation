@@ -1,4 +1,7 @@
+import { useNavigate } from 'react-router-dom'
+
 function Hero() {
+  const navigate = useNavigate()
   return (
     <section style={{ 
       backgroundColor: 'white', 
@@ -64,7 +67,8 @@ function Hero() {
           onMouseLeave={(e) => {
             e.target.style.transform = 'translateY(0)'
             e.target.style.boxShadow = '0 4px 12px rgba(8, 92, 151, 0.3)'
-          }}>
+          }}
+          onClick={() => navigate('/about')}>
             About the Foundation
           </button>
         </div>

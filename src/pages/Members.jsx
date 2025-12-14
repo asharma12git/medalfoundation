@@ -36,7 +36,7 @@ Executive Committee
           padding: '60px 40px',
           borderRadius: '8px',
           boxShadow: '0 4px 20px rgba(0, 0, 0, 0.1)',
-          border: '1px solid #e5e7eb'
+          border: '1px solid rgba(180, 83, 9, 0.4)'
         }}>
           {/* Member Layout */}
           <div style={{
@@ -50,7 +50,7 @@ Executive Committee
               width: '300px',
               height: '400px',
               borderRadius: '8px',
-              border: '1px solid #e5e7eb',
+              border: '1px solid rgba(180, 83, 9, 0.4)',
               overflow: 'hidden'
             }}>
               <img 
@@ -134,14 +134,14 @@ Executive Committee
             padding: '20px 15px',
             borderRadius: '8px',
             boxShadow: '0 4px 20px rgba(0, 0, 0, 0.1)',
-            border: '1px solid #e5e7eb'
+            border: '1px solid rgba(180, 83, 9, 0.4)'
           }}>
             {/* Member Image */}
             <div style={{
               width: '200px',
               height: '250px',
               borderRadius: '8px',
-              border: '1px solid #e5e7eb',
+              border: '1px solid rgba(180, 83, 9, 0.4)',
               margin: '0 auto 20px auto',
               overflow: 'hidden'
             }}>
@@ -214,14 +214,14 @@ Executive Committee
             padding: '20px 15px',
             borderRadius: '8px',
             boxShadow: '0 4px 20px rgba(0, 0, 0, 0.1)',
-            border: '1px solid #e5e7eb'
+            border: '1px solid rgba(180, 83, 9, 0.4)'
           }}>
             {/* Member Image */}
             <div style={{
               width: '200px',
               height: '250px',
               borderRadius: '8px',
-              border: '1px solid #e5e7eb',
+              border: '1px solid rgba(180, 83, 9, 0.4)',
               margin: '0 auto 20px auto',
               overflow: 'hidden'
             }}>
@@ -299,14 +299,14 @@ Executive Committee
             padding: '20px 15px',
             borderRadius: '8px',
             boxShadow: '0 4px 20px rgba(0, 0, 0, 0.1)',
-            border: '1px solid #e5e7eb'
+            border: '1px solid rgba(180, 83, 9, 0.4)'
           }}>
             {/* Member Image */}
             <div style={{
               width: '200px',
               height: '250px',
               borderRadius: '8px',
-              border: '1px solid #e5e7eb',
+              border: '1px solid rgba(180, 83, 9, 0.4)',
               margin: '0 auto 20px auto',
               overflow: 'hidden'
             }}>
@@ -378,14 +378,14 @@ Executive Committee
             padding: '20px 15px',
             borderRadius: '8px',
             boxShadow: '0 4px 20px rgba(0, 0, 0, 0.1)',
-            border: '1px solid #e5e7eb'
+            border: '1px solid rgba(180, 83, 9, 0.4)'
           }}>
             {/* Member Image */}
             <div style={{
               width: '200px',
               height: '250px',
               borderRadius: '8px',
-              border: '1px solid #e5e7eb',
+              border: '1px solid rgba(180, 83, 9, 0.4)',
               margin: '0 auto 20px auto',
               overflow: 'hidden'
             }}>
@@ -465,7 +465,7 @@ Executive Committee
             padding: '30px 20px',
             borderRadius: '8px',
             boxShadow: '0 4px 20px rgba(0, 0, 0, 0.1)',
-            border: '1px solid #e5e7eb',
+            border: '1px solid rgba(180, 83, 9, 0.4)',
             textAlign: 'center'
           }}>
             <h3 style={{
@@ -507,7 +507,7 @@ Executive Committee
             padding: '30px 20px',
             borderRadius: '8px',
             boxShadow: '0 4px 20px rgba(0, 0, 0, 0.1)',
-            border: '1px solid #e5e7eb',
+            border: '1px solid rgba(180, 83, 9, 0.4)',
             textAlign: 'center'
           }}>
             <h3 style={{
@@ -555,7 +555,7 @@ Executive Committee
             padding: '30px 20px',
             borderRadius: '8px',
             boxShadow: '0 4px 20px rgba(0, 0, 0, 0.1)',
-            border: '1px solid #e5e7eb'
+            border: '1px solid rgba(180, 83, 9, 0.4)'
           }}>
             <h3 style={{
               fontSize: '24px',
@@ -594,7 +594,7 @@ Executive Committee
             padding: '30px 20px',
             borderRadius: '8px',
             boxShadow: '0 4px 20px rgba(0, 0, 0, 0.1)',
-            border: '1px solid #e5e7eb'
+            border: '1px solid rgba(180, 83, 9, 0.4)'
           }}>
             <h3 style={{
               fontSize: '24px',
@@ -641,7 +641,7 @@ Executive Committee
             padding: '30px 20px',
             borderRadius: '8px',
             boxShadow: '0 4px 20px rgba(0, 0, 0, 0.1)',
-            border: '1px solid #e5e7eb'
+            border: '1px solid rgba(180, 83, 9, 0.4)'
           }}>
             <h3 style={{
               fontSize: '24px',
@@ -685,7 +685,7 @@ Executive Committee
             padding: '30px 20px',
             borderRadius: '8px',
             boxShadow: '0 4px 20px rgba(0, 0, 0, 0.1)',
-            border: '1px solid #e5e7eb'
+            border: '1px solid rgba(180, 83, 9, 0.4)'
           }}>
             <h3 style={{
               fontSize: '24px',
@@ -730,7 +730,7 @@ Executive Committee
           padding: '60px 40px',
           borderRadius: '8px',
           boxShadow: '0 4px 20px rgba(0, 0, 0, 0.1)',
-          border: '1px solid #e5e7eb'
+          border: '1px solid rgba(180, 83, 9, 0.4)'
         }}>
           <h3 style={{
             fontSize: '24px',
