@@ -81,9 +81,11 @@ The site uses a component-based architecture with:
 
 ## CI/CD
 
-Automated deployment via GitHub Actions:
+Automated deployment via AWS CodePipeline:
 - Push to `main` → Auto-deploy to production
 - Manual staging deployment for testing
+- CodePipeline: `medalfoundation-production-pipeline`
+- CodeBuild: `medalfoundation-frontend-production`
 
 ## License
 
