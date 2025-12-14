@@ -455,11 +455,12 @@ function ProjectShowcase() {
           </div>
         </div>
 
-        {/* Flow indicator */}
+        {/* Desktop: Flow indicator */}
         <div style={{ 
           textAlign: 'center', 
           margin: '40px 0',
-          opacity: 0.3
+          opacity: 0.3,
+          display: isMobile ? 'none' : 'block'
         }}>
           <div style={{
             fontSize: '24px',
@@ -673,11 +674,12 @@ function ProjectShowcase() {
 
         </div>
 
-        {/* Flow indicator */}
+        {/* Desktop: Flow indicator */}
         <div style={{ 
           textAlign: 'center', 
           margin: '40px 0',
-          opacity: 0.3
+          opacity: 0.3,
+          display: isMobile ? 'none' : 'block'
         }}>
           <div style={{
             fontSize: '24px',
