@@ -137,7 +137,7 @@ function Header() {
             }}>
               Relief and Humanitarian Work
             </Link>
-            <a href="#gallery" style={{ 
+            <Link to="/gallery" style={{ 
               fontSize: '16px', 
               fontWeight: '500', 
               color: '#6b7280', 
@@ -155,7 +155,7 @@ function Header() {
               e.target.style.transform = 'translateY(0)';
             }}>
               Gallery
-            </a>
+            </Link>
           </nav>
 
           {/* CTA Button */}

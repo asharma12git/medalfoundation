@@ -5,6 +5,7 @@ import About from './pages/About'
 import Members from './pages/Members'
 import ProjectsCollaborators from './pages/ProjectsCollaborators'
 import ReliefHumanitarian from './pages/ReliefHumanitarian'
+import Gallery from './pages/Gallery'
 import Footer from './components/Footer'
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
           <Route path="/members" element={<Members />} />
           <Route path="/projects" element={<ProjectsCollaborators />} />
           <Route path="/relief" element={<ReliefHumanitarian />} />
+          <Route path="/gallery" element={<Gallery />} />
         </Routes>
         <Footer />
       </div>
