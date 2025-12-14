@@ -47,7 +47,7 @@ function Footer() {
           alignItems: isMobile ? 'center' : 'flex-start',
           transition: 'all 0.3s ease'
         }}>
-          <Link to="/" onClick={() => window.scrollTo(0, 0)} style={{
+          <Link to="/" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} style={{
             width: isMobile ? '150px' : '200px',
             height: '50px',
             backgroundImage: 'url(/assets/images/shared/logo.jpg)',

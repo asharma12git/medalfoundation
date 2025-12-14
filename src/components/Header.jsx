@@ -41,7 +41,7 @@ function Header() {
         }}>
           {/* Logo */}
           <div style={{ display: 'flex', alignItems: 'center' }}>
-            <Link to="/" style={{
+            <Link to="/" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} style={{
               width: isMobile ? '150px' : isTablet ? '170px' : '200px',
               height: '50px',
               backgroundImage: 'url(/assets/images/shared/logo.jpg)',
@@ -59,7 +59,7 @@ function Header() {
             alignItems: 'center', 
             gap: isTablet ? '20px' : '40px'
           }}>
-            <Link to="/" style={{ 
+            <Link to="/" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} style={{ 
               fontSize: isTablet ? '14px' : '16px', 
               fontWeight: '500', 
               color: '#6b7280', 
@@ -244,7 +244,10 @@ function Header() {
                 padding: '20px'
               }}>
                 <Link to="/" 
-                  onClick={() => setIsMenuOpen(false)}
+                  onClick={() => {
+                    setIsMenuOpen(false);
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                  }}
                   style={{ 
                     fontSize: '16px', 
                     fontWeight: '500', 
