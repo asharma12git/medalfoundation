@@ -1,6 +1,20 @@
 import { Link } from 'react-router-dom'
+import { useState, useEffect } from 'react'
 
 function ProjectShowcase() {
+  const [isMobile, setIsMobile] = useState(false)
+
+  useEffect(() => {
+    const checkScreenSize = () => {
+      setIsMobile(window.innerWidth < 768)
+    }
+    
+    checkScreenSize()
+    window.addEventListener('resize', checkScreenSize)
+    
+    return () => window.removeEventListener('resize', checkScreenSize)
+  }, [])
+
   const currentProjects = {
     mainImages: [
       "/src/assets/images/pages/home/fartooyoung-hami-sana-chau.jpg",
@@ -32,9 +46,9 @@ function ProjectShowcase() {
         {/* Section Headers */}
         <div style={{ 
           display: 'grid', 
-          gridTemplateColumns: window.innerWidth < 768 ? '1fr' : '1fr 1fr', 
-          gap: window.innerWidth < 768 ? '24px' : '48px', 
-          marginBottom: window.innerWidth < 768 ? '40px' : '60px' 
+          gridTemplateColumns: isMobile ? '1fr' : '1fr 1fr', 
+          gap: isMobile ? '24px' : '48px', 
+          marginBottom: isMobile ? '40px' : '60px' 
         }}>
           <Link to="/child-marriage-in-nepal" style={{ textDecoration: 'none' }}>
             <div style={{
@@ -115,17 +129,186 @@ function ProjectShowcase() {
           </Link>
         </div>
 
-        {/* Row 1: Main Images */}
+        {/* Mobile: Current Projects Section */}
+        {isMobile && (
+          <div style={{ marginBottom: '60px' }}>
+            {/* Current Projects Images */}
+            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '6px', marginBottom: '20px' }}>
+              {currentProjects.mainImages.map((image, index) => (
+                <div
+                  key={index}
+                  style={{
+                    backgroundColor: 'rgba(255, 255, 255, 0.8)',
+                    backdropFilter: 'blur(10px)',
+                    borderRadius: '12px',
+                    overflow: 'hidden',
+                    border: '1px solid rgba(0, 0, 0, 0.05)',
+                    boxShadow: '0 4px 12px rgba(0, 0, 0, 0.08), 0 2px 4px rgba(0, 0, 0, 0.06)'
+                  }}
+                >
+                  <div style={{
+                    width: '100%',
+                    height: '200px',
+                    backgroundImage: `url(${image})`,
+                    backgroundSize: '100% 100%',
+                    backgroundPosition: 'center'
+                  }} />
+                </div>
+              ))}
+            </div>
+            
+            {/* Current Projects Logos */}
+            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '15px', marginBottom: '20px' }}>
+              {currentProjects.logos.map((logo, index) => (
+                <div
+                  key={index}
+                  style={{
+                    backgroundColor: 'rgba(255, 255, 255, 0.8)',
+                    backdropFilter: 'blur(10px)',
+                    borderRadius: '8px',
+                    overflow: 'hidden',
+                    border: '1px solid rgba(0, 0, 0, 0.05)',
+                    boxShadow: '0 2px 8px rgba(0, 0, 0, 0.08), 0 1px 2px rgba(0, 0, 0, 0.06)'
+                  }}
+                >
+                  <div style={{
+                    width: '100%',
+                    aspectRatio: '1',
+                    backgroundImage: `url(${logo})`,
+                    backgroundSize: 'contain',
+                    backgroundRepeat: 'no-repeat',
+                    backgroundPosition: 'center'
+                  }} />
+                </div>
+              ))}
+            </div>
+
+            {/* Social Welfare Council Certificate */}
+            <div style={{
+              backgroundColor: 'rgba(255, 255, 255, 0.8)',
+              backdropFilter: 'blur(10px)',
+              borderRadius: '12px',
+              overflow: 'hidden',
+              border: '1px solid rgba(0, 0, 0, 0.05)',
+              boxShadow: '0 4px 12px rgba(0, 0, 0, 0.08), 0 2px 4px rgba(0, 0, 0, 0.06)'
+            }}>
+              <div style={{
+                width: '100%',
+                height: '250px',
+                backgroundImage: 'url(/src/assets/images/pages/home/social-welfare-council.png)',
+                backgroundSize: '100% 100%',
+                backgroundPosition: 'center'
+              }} />
+            </div>
+          </div>
+        )}
+
+        {/* Mobile: Past Projects Section */}
+        {isMobile && (
+          <div style={{ marginBottom: '60px' }}>
+            {/* I Helped Save a Life */}
+            <div style={{
+              backgroundColor: 'rgba(255, 255, 255, 0.8)',
+              backdropFilter: 'blur(10px)',
+              borderRadius: '12px',
+              overflow: 'hidden',
+              border: '1px solid rgba(0, 0, 0, 0.05)',
+              boxShadow: '0 4px 12px rgba(0, 0, 0, 0.08), 0 2px 4px rgba(0, 0, 0, 0.06)',
+              marginBottom: '20px'
+            }}>
+              <div style={{
+                width: '100%',
+                height: '250px',
+                backgroundImage: `url(${pastProjects.main})`,
+                backgroundSize: '100% 100%',
+                backgroundPosition: 'center'
+              }} />
+            </div>
+
+            {/* Past project images in 2x2 grid */}
+            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '20px' }}>
+              <div style={{
+                backgroundColor: 'rgba(255, 255, 255, 0.8)',
+                backdropFilter: 'blur(10px)',
+                borderRadius: '8px',
+                overflow: 'hidden',
+                border: '1px solid rgba(0, 0, 0, 0.05)',
+                boxShadow: '0 2px 8px rgba(180, 83, 9, 0.1)'
+              }}>
+                <div style={{
+                  width: '100%',
+                  aspectRatio: '1',
+                  backgroundImage: `url(${pastProjects.topImages[0]})`,
+                  backgroundSize: '100% 100%',
+                  backgroundPosition: 'center'
+                }} />
+              </div>
+              
+              <div style={{
+                backgroundColor: 'rgba(255, 255, 255, 0.8)',
+                backdropFilter: 'blur(10px)',
+                borderRadius: '8px',
+                overflow: 'hidden',
+                border: '1px solid rgba(0, 0, 0, 0.05)',
+                boxShadow: '0 2px 8px rgba(180, 83, 9, 0.1)'
+              }}>
+                <div style={{
+                  width: '100%',
+                  aspectRatio: '1',
+                  backgroundImage: `url(${pastProjects.bottomImage})`,
+                  backgroundSize: '100% 100%',
+                  backgroundPosition: 'center'
+                }} />
+              </div>
+              
+              <div style={{
+                backgroundColor: 'rgba(255, 255, 255, 0.8)',
+                backdropFilter: 'blur(10px)',
+                borderRadius: '8px',
+                overflow: 'hidden',
+                border: '1px solid rgba(0, 0, 0, 0.05)',
+                boxShadow: '0 2px 8px rgba(180, 83, 9, 0.1)'
+              }}>
+                <div style={{
+                  width: '100%',
+                  aspectRatio: '1',
+                  backgroundImage: `url(${pastProjects.topImages[1]})`,
+                  backgroundSize: '100% 100%',
+                  backgroundPosition: 'center'
+                }} />
+              </div>
+              
+              <div style={{
+                backgroundColor: 'rgba(255, 255, 255, 0.8)',
+                backdropFilter: 'blur(10px)',
+                borderRadius: '8px',
+                overflow: 'hidden',
+                border: '1px solid rgba(0, 0, 0, 0.05)',
+                boxShadow: '0 2px 8px rgba(180, 83, 9, 0.1)'
+              }}>
+                <div style={{
+                  width: '100%',
+                  aspectRatio: '1',
+                  backgroundImage: 'url(/src/assets/images/pages/home/chameli-poster-2.jpg)',
+                  backgroundSize: '100% 100%',
+                  backgroundPosition: 'center'
+                }} />
+              </div>
+            </div>
+          </div>
+        )}
+
+        {/* Desktop: Row 1: Main Images */}
         <div style={{ 
-          display: 'grid', 
-          gridTemplateColumns: window.innerWidth < 768 ? '1fr' : '1fr 1fr', 
+          display: isMobile ? 'none' : 'grid', 
+          gridTemplateColumns: '1fr 1fr', 
           gap: '32px', 
           marginBottom: '40px' 
         }}>
           {/* Two main images side by side */}
           <div style={{ 
             display: 'grid', 
-            gridTemplateColumns: window.innerWidth < 640 ? '1fr' : '1fr 1fr', 
+            gridTemplateColumns: '1fr 1fr', 
             gap: '6px' 
           }}>
             {currentProjects.mainImages.map((image, index) => (
@@ -152,7 +335,7 @@ function ProjectShowcase() {
               >
                 <div style={{
                   width: '100%',
-                  height: window.innerWidth < 640 ? '250px' : '500px',
+                  height: '500px',
                   backgroundImage: `url(${image})`,
                   backgroundSize: '100% 100%',
                   backgroundPosition: 'center'
@@ -182,7 +365,7 @@ function ProjectShowcase() {
           }}>
             <div style={{
               width: '100%',
-              height: window.innerWidth < 640 ? '250px' : '500px',
+              height: '500px',
               backgroundImage: `url(${pastProjects.main})`,
               backgroundSize: '100% 100%',
               backgroundPosition: 'center'
@@ -205,19 +388,19 @@ function ProjectShowcase() {
           </div>
         </div>
 
-        {/* Row 2: Social Welfare Council and Past Project Images */}
+        {/* Desktop: Row 2: Social Welfare Council and Past Project Images */}
         <div style={{ 
-          display: 'grid', 
-          gridTemplateColumns: window.innerWidth < 768 ? '1fr' : '1fr 1fr', 
+          display: isMobile ? 'none' : 'grid', 
+          gridTemplateColumns: '1fr 1fr', 
           gap: '32px', 
           marginBottom: '40px' 
         }}>
           {/* Left side: 4 logos at top + Social Welfare Council Certificate below */}
           <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
-            {/* 4 logos in responsive grid */}
+            {/* 4 logos in desktop grid */}
             <div style={{ 
               display: 'grid', 
-              gridTemplateColumns: window.innerWidth < 640 ? '1fr 1fr' : 'repeat(4, 1fr)', 
+              gridTemplateColumns: 'repeat(4, 1fr)', 
               gap: '15px' 
             }}>
               {currentProjects.logos.map((logo, index) => (
@@ -275,7 +458,7 @@ function ProjectShowcase() {
             }}>
               <div style={{
                 width: '100%',
-                height: window.innerWidth < 640 ? '250px' : '500px',
+                height: '500px',
                 backgroundImage: 'url(/src/assets/images/pages/home/social-welfare-council.png)',
                 backgroundSize: '100% 100%',
                 backgroundPosition: 'center'
@@ -423,11 +606,12 @@ function ProjectShowcase() {
           </div>
         </div>
 
-        {/* Nepal Medical Associations Section */}
+        {/* Desktop: Nepal Medical Associations Section */}
         <div style={{
           maxWidth: '1400px',
           margin: '20px auto 0 auto',
-          textAlign: 'left'
+          textAlign: 'left',
+          display: isMobile ? 'none' : 'block'
         }}>
           <h2 style={{
             fontSize: '24px',
@@ -444,7 +628,7 @@ function ProjectShowcase() {
           
           <div style={{ 
             display: 'grid', 
-            gridTemplateColumns: window.innerWidth < 768 ? '1fr' : '1fr 1fr', 
+            gridTemplateColumns: '1fr 1fr', 
             gap: '40px' 
           }}>
             <div style={{
