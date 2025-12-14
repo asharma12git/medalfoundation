@@ -29,10 +29,9 @@ function ProjectsCollaborators() {
             textAlign: 'center',
             marginBottom: '16px',
             lineHeight: '1.2',
-            textDecoration: 'underline',
-            textDecorationThickness: '2px',
-            textUnderlineOffset: '8px',
-            fontFamily: 'Times, "Times New Roman", serif'
+            borderBottom: '3px solid #085c97',
+            paddingBottom: '12px',
+            display: 'inline-block'
           }}>
             Three Decades of Service
           </h1>
@@ -190,7 +189,7 @@ function ProjectsCollaborators() {
         backgroundColor: 'white',
         padding: '20px 20px 60px 20px'
       }}>
-        <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
+        <div style={{ maxWidth: '1200px', margin: '0 auto', textAlign: 'center' }}>
           <h1 style={{
             fontSize: '36px',
             fontWeight: '700',
@@ -198,10 +197,9 @@ function ProjectsCollaborators() {
             textAlign: 'center',
             marginBottom: '16px',
             lineHeight: '1.2',
-            textDecoration: 'underline',
-            textDecorationThickness: '2px',
-            textUnderlineOffset: '8px',
-            fontFamily: 'Times, "Times New Roman", serif'
+            borderBottom: '3px solid #085c97',
+            paddingBottom: '12px',
+            display: 'inline-block'
           }}>
             Past & Present Collaborators
           </h1>

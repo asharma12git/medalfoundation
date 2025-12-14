@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom'
+
 function Footer() {
   return (
     <footer style={{ 
@@ -14,13 +16,15 @@ function Footer() {
       }}>
         {/* Logo and Copyright */}
         <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
-          <div style={{
+          <Link to="/" onClick={() => window.scrollTo(0, 0)} style={{
             width: '200px',
             height: '50px',
             backgroundImage: 'url(/src/assets/images/shared/logo.jpg)',
             backgroundSize: 'contain',
             backgroundRepeat: 'no-repeat',
-            backgroundPosition: 'left center'
+            backgroundPosition: 'left center',
+            cursor: 'pointer',
+            display: 'block'
           }} />
           <p style={{ 
             fontSize: '14px', 

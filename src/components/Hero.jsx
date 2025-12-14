@@ -15,7 +15,7 @@ function Hero() {
           padding: '8px 16px',
           fontSize: '14px',
           color: '#666',
-          backgroundColor: '#f5f5f5',
+          backgroundColor: '#eeeeee',
           borderRadius: '20px',
           marginBottom: '32px'
         }}>
@@ -72,8 +72,9 @@ function Hero() {
             color: 'white',
             background: 'linear-gradient(135deg, #085c97 0%, #0a6bb0 100%)',
             border: 'none',
-            borderRadius: '12px',
+            borderRadius: '25px',
             cursor: 'pointer',
+            whiteSpace: 'nowrap',
             boxShadow: '0 4px 12px rgba(8, 92, 151, 0.3)',
             transition: 'all 0.3s ease'
           }}

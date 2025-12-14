@@ -30,32 +30,30 @@ function ProjectShowcase() {
         {/* Section Headers */}
         <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '48px', marginBottom: '60px' }}>
           <div style={{
-            textAlign: 'center',
-            padding: '16px 24px',
-            background: 'linear-gradient(135deg, rgba(8, 92, 151, 0.3) 0%, rgba(8, 92, 151, 0.18) 100%)',
-            backdropFilter: 'blur(10px)',
-            borderRadius: '12px',
-            border: '1px solid rgba(8, 92, 151, 0.5)',
-            boxShadow: '0 4px 12px rgba(8, 92, 151, 0.2)',
             cursor: 'pointer',
-            transition: 'all 0.3s ease',
-            position: 'relative'
+            transition: 'all 0.3s ease'
           }}
           onMouseEnter={(e) => {
-            e.currentTarget.style.transform = 'translateY(-2px)'
-            e.currentTarget.style.boxShadow = '0 8px 20px rgba(8, 92, 151, 0.2)'
-            e.currentTarget.style.background = 'linear-gradient(135deg, rgba(8, 92, 151, 0.4) 0%, rgba(8, 92, 151, 0.25) 100%)'
+            e.currentTarget.querySelector('h2').style.color = '#085c97'
+            e.currentTarget.querySelector('h2').style.borderBottomColor = '#085c97'
+            e.currentTarget.querySelector('h2').style.filter = 'drop-shadow(0 3px 6px rgba(8, 92, 151, 0.3))'
+            e.currentTarget.querySelector('span').style.transform = 'translateX(4px)'
           }}
           onMouseLeave={(e) => {
-            e.currentTarget.style.transform = 'translateY(0)'
-            e.currentTarget.style.boxShadow = '0 4px 12px rgba(8, 92, 151, 0.1)'
-            e.currentTarget.style.background = 'linear-gradient(135deg, rgba(8, 92, 151, 0.3) 0%, rgba(8, 92, 151, 0.18) 100%)'
+            e.currentTarget.querySelector('h2').style.color = '#171717'
+            e.currentTarget.querySelector('h2').style.borderBottomColor = '#085c97'
+            e.currentTarget.querySelector('h2').style.filter = 'none'
+            e.currentTarget.querySelector('span').style.transform = 'translateX(0)'
           }}>
             <h2 style={{
               fontSize: '24px',
-              fontWeight: '500',
+              fontWeight: '600',
               color: '#171717',
               margin: 0,
+              textAlign: 'center',
+              borderBottom: '3px solid #085c97',
+              paddingBottom: '12px',
+              transition: 'color 0.2s ease',
               display: 'flex',
               alignItems: 'center',
               justifyContent: 'center',
@@ -63,40 +61,38 @@ function ProjectShowcase() {
             }}>
               Current Projects
               <span style={{
-                fontSize: '16px',
+                fontSize: '20px',
                 color: '#085c97',
-                transition: 'transform 0.3s ease'
+                transition: 'transform 0.2s ease'
               }}>→</span>
             </h2>
           </div>
           
           <div style={{
-            textAlign: 'center',
-            padding: '16px 24px',
-            background: 'linear-gradient(135deg, rgba(218, 165, 32, 0.35) 0%, rgba(218, 165, 32, 0.22) 100%)',
-            backdropFilter: 'blur(10px)',
-            borderRadius: '12px',
-            border: '1px solid rgba(218, 165, 32, 0.6)',
-            boxShadow: '0 4px 12px rgba(218, 165, 32, 0.3)',
             cursor: 'pointer',
-            transition: 'all 0.3s ease',
-            position: 'relative'
+            transition: 'all 0.3s ease'
           }}
           onMouseEnter={(e) => {
-            e.currentTarget.style.transform = 'translateY(-2px)'
-            e.currentTarget.style.boxShadow = '0 8px 20px rgba(218, 165, 32, 0.3)'
-            e.currentTarget.style.background = 'linear-gradient(135deg, rgba(218, 165, 32, 0.5) 0%, rgba(218, 165, 32, 0.32) 100%)'
+            e.currentTarget.querySelector('h2').style.color = '#a47c43'
+            e.currentTarget.querySelector('h2').style.borderBottomColor = '#a47c43'
+            e.currentTarget.querySelector('h2').style.filter = 'drop-shadow(0 3px 6px rgba(164, 124, 67, 0.3))'
+            e.currentTarget.querySelector('span').style.transform = 'translateX(4px)'
           }}
           onMouseLeave={(e) => {
-            e.currentTarget.style.transform = 'translateY(0)'
-            e.currentTarget.style.boxShadow = '0 4px 12px rgba(218, 165, 32, 0.2)'
-            e.currentTarget.style.background = 'linear-gradient(135deg, rgba(218, 165, 32, 0.35) 0%, rgba(218, 165, 32, 0.22) 100%)'
+            e.currentTarget.querySelector('h2').style.color = '#171717'
+            e.currentTarget.querySelector('h2').style.borderBottomColor = '#a47c43'
+            e.currentTarget.querySelector('h2').style.filter = 'none'
+            e.currentTarget.querySelector('span').style.transform = 'translateX(0)'
           }}>
             <h2 style={{
               fontSize: '24px',
-              fontWeight: '500',
+              fontWeight: '600',
               color: '#171717',
               margin: 0,
+              textAlign: 'center',
+              borderBottom: '3px solid #a47c43',
+              paddingBottom: '12px',
+              transition: 'color 0.2s ease',
               display: 'flex',
               alignItems: 'center',
               justifyContent: 'center',
@@ -104,18 +100,18 @@ function ProjectShowcase() {
             }}>
               Past Projects
               <span style={{
-                fontSize: '16px',
-                color: '#DAA520',
-                transition: 'transform 0.3s ease'
+                fontSize: '20px',
+                color: '#a47c43',
+                transition: 'transform 0.2s ease'
               }}>→</span>
             </h2>
           </div>
         </div>
 
         {/* Row 1: Main Images */}
-        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '32px', marginBottom: '60px' }}>
+        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '32px', marginBottom: '40px' }}>
           {/* Two main images side by side */}
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '20px' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '6px' }}>
             {currentProjects.mainImages.map((image, index) => (
               <div
                 key={index}
@@ -124,8 +120,8 @@ function ProjectShowcase() {
                   backdropFilter: 'blur(10px)',
                   borderRadius: '12px',
                   overflow: 'hidden',
-                  border: '1px solid rgba(8, 92, 151, 0.2)',
-                  boxShadow: '0 4px 12px rgba(8, 92, 151, 0.1)',
+                  border: '1px solid rgba(0, 0, 0, 0.05)',
+                  boxShadow: '0 4px 12px rgba(0, 0, 0, 0.08), 0 2px 4px rgba(0, 0, 0, 0.06)',
                   transition: 'all 0.3s ease',
                   cursor: 'pointer'
                 }}
@@ -155,8 +151,8 @@ function ProjectShowcase() {
             backdropFilter: 'blur(10px)',
             borderRadius: '12px',
             overflow: 'hidden',
-            border: '1px solid rgba(180, 83, 9, 0.2)',
-            boxShadow: '0 4px 12px rgba(180, 83, 9, 0.1)',
+            border: '1px solid rgba(0, 0, 0, 0.05)',
+            boxShadow: '0 4px 12px rgba(0, 0, 0, 0.08), 0 2px 4px rgba(0, 0, 0, 0.06)',
             transition: 'all 0.3s ease',
             cursor: 'pointer'
           }}
@@ -178,8 +174,23 @@ function ProjectShowcase() {
           </div>
         </div>
 
+        {/* Flow indicator */}
+        <div style={{ 
+          textAlign: 'center', 
+          margin: '40px 0',
+          opacity: 0.3
+        }}>
+          <div style={{
+            fontSize: '24px',
+            color: '#085c97',
+            animation: 'bounce 2s infinite'
+          }}>
+            ↓
+          </div>
+        </div>
+
         {/* Row 2: Social Welfare Council and Past Project Images */}
-        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '32px', marginBottom: '60px' }}>
+        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '32px', marginBottom: '40px' }}>
           {/* Left side: 4 logos at top + Social Welfare Council Certificate below */}
           <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
             {/* 4 logos in 4x1 row */}
@@ -192,8 +203,8 @@ function ProjectShowcase() {
                     backdropFilter: 'blur(10px)',
                     borderRadius: '8px',
                     overflow: 'hidden',
-                    border: '1px solid rgba(8, 92, 151, 0.2)',
-                    boxShadow: '0 2px 8px rgba(8, 92, 151, 0.1)',
+                    border: '1px solid rgba(0, 0, 0, 0.05)',
+                    boxShadow: '0 2px 8px rgba(0, 0, 0, 0.08), 0 1px 2px rgba(0, 0, 0, 0.06)',
                     transition: 'all 0.3s ease',
                     cursor: 'pointer'
                   }}
@@ -224,8 +235,8 @@ function ProjectShowcase() {
               backdropFilter: 'blur(10px)',
               borderRadius: '12px',
               overflow: 'hidden',
-              border: '1px solid rgba(8, 92, 151, 0.2)',
-              boxShadow: '0 4px 12px rgba(8, 92, 151, 0.1)',
+              border: '1px solid rgba(0, 0, 0, 0.05)',
+              boxShadow: '0 4px 12px rgba(0, 0, 0, 0.08), 0 2px 4px rgba(0, 0, 0, 0.06)',
               transition: 'all 0.3s ease',
               cursor: 'pointer'
             }}
@@ -257,7 +268,7 @@ function ProjectShowcase() {
                 backdropFilter: 'blur(10px)',
                 borderRadius: '8px',
                 overflow: 'hidden',
-                border: '1px solid rgba(180, 83, 9, 0.2)',
+                border: '1px solid rgba(0, 0, 0, 0.05)',
                 boxShadow: '0 2px 8px rgba(180, 83, 9, 0.1)',
                 transition: 'all 0.3s ease',
                 cursor: 'pointer'
@@ -286,7 +297,7 @@ function ProjectShowcase() {
                 backdropFilter: 'blur(10px)',
                 borderRadius: '8px',
                 overflow: 'hidden',
-                border: '1px solid rgba(180, 83, 9, 0.2)',
+                border: '1px solid rgba(0, 0, 0, 0.05)',
                 boxShadow: '0 2px 8px rgba(180, 83, 9, 0.1)',
                 transition: 'all 0.3s ease',
                 cursor: 'pointer'
@@ -315,7 +326,7 @@ function ProjectShowcase() {
                 backdropFilter: 'blur(10px)',
                 borderRadius: '8px',
                 overflow: 'hidden',
-                border: '1px solid rgba(180, 83, 9, 0.2)',
+                border: '1px solid rgba(0, 0, 0, 0.05)',
                 boxShadow: '0 2px 8px rgba(180, 83, 9, 0.1)',
                 transition: 'all 0.3s ease',
                 cursor: 'pointer'
@@ -338,30 +349,108 @@ function ProjectShowcase() {
                 }} />
               </div>
               
-              {/* Fourth image - blank */}
-              <div></div>
-            </div>
-            
-            {/* Nepal Medical Associations Section */}
-            <div style={{ marginTop: '60px' }}>
-              <h3 style={{
-                fontSize: '20px',
-                fontWeight: '500',
-                color: '#171717',
-                marginBottom: '20px',
-                textAlign: 'left'
+              {/* Fourth image */}
+              <div style={{
+                backgroundColor: 'rgba(255, 255, 255, 0.8)',
+                backdropFilter: 'blur(10px)',
+                borderRadius: '8px',
+                overflow: 'hidden',
+                border: '1px solid rgba(0, 0, 0, 0.05)',
+                boxShadow: '0 2px 8px rgba(180, 83, 9, 0.1)',
+                transition: 'all 0.3s ease',
+                cursor: 'pointer'
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.transform = 'scale(1.05)'
+                e.currentTarget.style.boxShadow = '0 4px 12px rgba(180, 83, 9, 0.15)'
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.transform = 'scale(1)'
+                e.currentTarget.style.boxShadow = '0 2px 8px rgba(180, 83, 9, 0.1)'
               }}>
-                Nepal Medical Associations Presents
-              </h3>
-              <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '20px' }}>
                 <div style={{
-                  backgroundColor: 'rgba(255, 255, 255, 0.8)',
-                  backdropFilter: 'blur(10px)',
-                  borderRadius: '8px',
+                  width: '100%',
+                  aspectRatio: '1',
+                  backgroundImage: 'url(/src/assets/images/pages/home/chameli-poster-2.jpg)',
+                  backgroundSize: '100% 100%',
+                  backgroundRepeat: 'no-repeat',
+                  backgroundPosition: 'center'
+                }} />
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+        {/* Flow indicator */}
+        <div style={{ 
+          textAlign: 'center', 
+          margin: '40px 0',
+          opacity: 0.3
+        }}>
+          <div style={{
+            fontSize: '24px',
+            color: '#085c97',
+            animation: 'bounce 2s infinite'
+          }}>
+            ↓
+          </div>
+        </div>
+
+        {/* Nepal Medical Associations Section */}
+        <div style={{
+          maxWidth: '1400px',
+          margin: '20px auto 0 auto',
+          textAlign: 'left'
+        }}>
+          <h2 style={{
+            fontSize: '24px',
+            fontWeight: '600',
+            color: '#171717',
+            margin: '0 0 40px 0',
+            textAlign: 'left',
+            borderBottom: '3px solid #085c97',
+            paddingBottom: '12px',
+            display: 'inline-block'
+          }}>
+            COVID-19: Health Care Protection Initiative
+          </h2>
+          
+          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '40px' }}>
+            <div style={{
+              backgroundColor: '#f5f5f7',
+              borderRadius: '24px',
+              padding: '20px',
+              boxShadow: '0 8px 32px rgba(0, 0, 0, 0.12), 0 2px 8px rgba(0, 0, 0, 0.08)',
+              border: '1px solid rgba(0, 0, 0, 0.1)',
+              aspectRatio: '16/9'
+            }}>
+              {/* Device bezel */}
+              <div style={{
+                backgroundColor: '#000',
+                borderRadius: '16px',
+                padding: '12px',
+                height: '100%',
+                position: 'relative'
+              }}>
+                {/* Home indicator */}
+                <div style={{
+                  position: 'absolute',
+                  top: '6px',
+                  left: '50%',
+                  transform: 'translateX(-50%)',
+                  width: '60px',
+                  height: '4px',
+                  backgroundColor: '#333',
+                  borderRadius: '2px'
+                }} />
+                <div style={{
+                  borderRadius: '12px',
                   overflow: 'hidden',
-                  border: '1px solid rgba(180, 83, 9, 0.2)',
-                  boxShadow: '0 2px 8px rgba(180, 83, 9, 0.1)',
-                  aspectRatio: '16/9'
+                  height: '100%',
+                  backgroundColor: '#000',
+                  marginTop: '16px'
                 }}>
                   <iframe
                     width="100%"
@@ -373,14 +462,41 @@ function ProjectShowcase() {
                     allowFullScreen
                   ></iframe>
                 </div>
+              </div>
+            </div>
+            <div style={{
+              backgroundColor: '#f5f5f7',
+              borderRadius: '24px',
+              padding: '20px',
+              boxShadow: '0 8px 32px rgba(0, 0, 0, 0.12), 0 2px 8px rgba(0, 0, 0, 0.08)',
+              border: '1px solid rgba(0, 0, 0, 0.1)',
+              aspectRatio: '16/9'
+            }}>
+              {/* Device bezel */}
+              <div style={{
+                backgroundColor: '#000',
+                borderRadius: '16px',
+                padding: '12px',
+                height: '100%',
+                position: 'relative'
+              }}>
+                {/* Home indicator */}
                 <div style={{
-                  backgroundColor: 'rgba(255, 255, 255, 0.8)',
-                  backdropFilter: 'blur(10px)',
-                  borderRadius: '8px',
+                  position: 'absolute',
+                  top: '6px',
+                  left: '50%',
+                  transform: 'translateX(-50%)',
+                  width: '60px',
+                  height: '4px',
+                  backgroundColor: '#333',
+                  borderRadius: '2px'
+                }} />
+                <div style={{
+                  borderRadius: '12px',
                   overflow: 'hidden',
-                  border: '1px solid rgba(180, 83, 9, 0.2)',
-                  boxShadow: '0 2px 8px rgba(180, 83, 9, 0.1)',
-                  aspectRatio: '16/9'
+                  height: '100%',
+                  backgroundColor: '#000',
+                  marginTop: '16px'
                 }}>
                   <iframe
                     width="100%"
@@ -395,7 +511,6 @@ function ProjectShowcase() {
               </div>
             </div>
           </div>
-
         </div>
 
       </div>

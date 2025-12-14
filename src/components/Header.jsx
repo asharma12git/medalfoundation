@@ -24,13 +24,15 @@ function Header() {
           {/* Logo */}
           <div style={{ display: 'flex', alignItems: 'center' }}>
             {/* Company Logo */}
-            <div style={{
+            <Link to="/" style={{
               width: '200px',
               height: '50px',
               backgroundImage: 'url(/src/assets/images/shared/logo.jpg)',
               backgroundSize: 'contain',
               backgroundRepeat: 'no-repeat',
-              backgroundPosition: 'left center'
+              backgroundPosition: 'left center',
+              cursor: 'pointer',
+              display: 'block'
             }} />
           </div>
 
@@ -116,7 +118,7 @@ function Header() {
             }}>
               Projects & Collaborators
             </Link>
-            <a href="#relief" style={{ 
+            <Link to="/relief" style={{ 
               fontSize: '16px', 
               fontWeight: '500', 
               color: '#6b7280', 
@@ -134,7 +136,7 @@ function Header() {
               e.target.style.transform = 'translateY(0)';
             }}>
               Relief and Humanitarian Work
-            </a>
+            </Link>
             <a href="#gallery" style={{ 
               fontSize: '16px', 
               fontWeight: '500', 
@@ -165,7 +167,7 @@ function Header() {
               color: 'white',
               background: 'linear-gradient(135deg, #085c97 0%, #0a6bb0 100%)',
               border: 'none',
-              borderRadius: '12px',
+              borderRadius: '25px',
               cursor: 'pointer',
               whiteSpace: 'nowrap',
               boxShadow: '0 4px 12px rgba(8, 92, 151, 0.3)',
@@ -179,7 +181,7 @@ function Header() {
               e.target.style.transform = 'translateY(0)';
               e.target.style.boxShadow = '0 4px 12px rgba(8, 92, 151, 0.3)';
             }}>
-              Get Involved
+              Contact Us
             </button>
           </div>
         </div>

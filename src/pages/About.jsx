@@ -20,20 +20,18 @@ function About() {
         backgroundColor: 'white',
         padding: '60px 20px 0px 20px'
       }}>
-        <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
+        <div style={{ maxWidth: '1200px', margin: '0 auto', textAlign: 'center' }}>
           <h1 style={{
             fontSize: '36px',
-            fontWeight: '700',
-            color: '#000',
-            textAlign: 'center',
+            fontWeight: '600',
+            color: '#171717',
             marginBottom: '16px',
             lineHeight: '1.2',
-            textDecoration: 'underline',
-            textDecorationThickness: '2px',
-            textUnderlineOffset: '8px',
-            fontFamily: 'Times, "Times New Roman", serif'
+            borderBottom: '3px solid #085c97',
+            paddingBottom: '12px',
+            display: 'inline-block'
           }}>
-            30 Years Of Service To Humanity
+            30 Years of Service to Humanity
           </h1>
         </div>
       </section>
@@ -46,11 +44,12 @@ function About() {
         <div style={{
           maxWidth: '1200px',
           margin: '0 auto',
-          backgroundColor: '#fefefe',
+          backgroundColor: 'rgba(255, 255, 255, 0.8)',
+          backdropFilter: 'blur(10px)',
           padding: '60px 40px',
-          borderRadius: '8px',
-          boxShadow: '0 4px 20px rgba(0, 0, 0, 0.1)',
-          border: '1px solid rgba(180, 83, 9, 0.4)'
+          borderRadius: '12px',
+          boxShadow: '0 4px 12px rgba(0, 0, 0, 0.08), 0 2px 4px rgba(0, 0, 0, 0.06)',
+          border: '1px solid rgba(0, 0, 0, 0.05)'
         }}>
           {/* Centered Logo */}
           <div style={{
@@ -84,7 +83,7 @@ function About() {
             
             <p>Media Alert and Relief Foundation is a dedicated non-profit organization committed to uplifting marginalized communities in Nepal and South Asia. With a team of passionate individuals from diverse backgrounds, Media Alert has been at the forefront of social change, addressing critical issues such as poverty, gender inequality, and environmental degradation.</p>
             
-            <h3 style={{ fontSize: '18px', fontWeight: '600', color: '#085c97', marginTop: '32px', marginBottom: '16px' }}>Our Mission</h3>
+            <h1 style={{ fontSize: '36px', fontWeight: '700', color: '#085c97', marginTop: '32px', marginBottom: '16px' }}>Our Mission</h1>
             
             <p>Media Alert strives to empower communities through education, awareness, and humanitarian aid. Our core mission is to:</p>
             

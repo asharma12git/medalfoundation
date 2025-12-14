@@ -6,20 +6,18 @@ function Members() {
         backgroundColor: 'white',
         padding: '60px 20px 0px 20px'
       }}>
-        <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
+        <div style={{ maxWidth: '1200px', margin: '0 auto', textAlign: 'center' }}>
           <h1 style={{
             fontSize: '36px',
-            fontWeight: '700',
-            color: '#000',
-            textAlign: 'center',
+            fontWeight: '600',
+            color: '#171717',
             marginBottom: '16px',
             lineHeight: '1.2',
-            textDecoration: 'underline',
-            textDecorationThickness: '2px',
-            textUnderlineOffset: '8px',
-            fontFamily: 'Times, "Times New Roman", serif'
+            borderBottom: '3px solid #085c97',
+            paddingBottom: '12px',
+            display: 'inline-block'
           }}>
-Executive Committee
+            Executive Committee
           </h1>
         </div>
       </section>
@@ -32,11 +30,12 @@ Executive Committee
         <div style={{
           maxWidth: '1200px',
           margin: '0 auto',
-          backgroundColor: '#fefefe',
+          backgroundColor: 'rgba(255, 255, 255, 0.8)',
+          backdropFilter: 'blur(10px)',
           padding: '60px 40px',
-          borderRadius: '8px',
-          boxShadow: '0 4px 20px rgba(0, 0, 0, 0.1)',
-          border: '1px solid rgba(180, 83, 9, 0.4)'
+          borderRadius: '12px',
+          boxShadow: '0 4px 12px rgba(0, 0, 0, 0.08), 0 2px 4px rgba(0, 0, 0, 0.06)',
+          border: '1px solid rgba(0, 0, 0, 0.05)'
         }}>
           {/* Member Layout */}
           <div style={{
@@ -49,8 +48,8 @@ Executive Committee
             <div style={{
               width: '300px',
               height: '400px',
-              borderRadius: '8px',
-              border: '1px solid rgba(180, 83, 9, 0.4)',
+              borderRadius: '12px',
+              border: '1px solid rgba(0, 0, 0, 0.05)',
               overflow: 'hidden'
             }}>
               <img 
@@ -80,8 +79,7 @@ Executive Committee
                 fontWeight: '600',
                 color: '#000',
                 marginBottom: '8px',
-                lineHeight: '1.2',
-                fontFamily: 'Times, "Times New Roman", serif'
+                lineHeight: '1.2'
               }}>
                 Ravi Baral
               </h2>
@@ -91,8 +89,7 @@ Executive Committee
                 fontSize: '18px',
                 fontWeight: '500',
                 color: '#085c97',
-                marginBottom: '16px',
-                fontFamily: 'Times, "Times New Roman", serif'
+                marginBottom: '16px'
               }}>
                 Founder and Executive Chairperson
               </h3>
@@ -110,7 +107,6 @@ Executive Committee
                 lineHeight: '1.8',
                 color: '#374151',
                 textAlign: 'justify',
-                fontFamily: 'Times, "Times New Roman", serif'
               }}>
                 <p style={{ marginBottom: '32px' }}>Ravi Baral, a prominent activist filmmaker, has dedicated his life to using the power of media to address critical social issues. He is the founder and executive chairperson of Media Alert and Relief Foundation, an organization he has led for over three decades. His career began at Nepal Television, where he produced documentaries, anchored current affairs programs, and hosted the popular Music Magazine. In 1993, he founded Media Alert, a platform to create impactful films and campaigns. He has produced feature films, documentaries, and short films, each addressing pressing social concerns. A former student of the renowned Fr. Marshall D. Moran at St. Xavier's School, Baral has continued to honor his mentor's legacy by contributing significantly to the Fr. Moran Education Fund, which provides scholarships to underprivileged children.</p>
                 
@@ -130,18 +126,19 @@ Executive Committee
         }}>
           {/* Left Member */}
           <div style={{
-            backgroundColor: '#fefefe',
+            backgroundColor: 'rgba(255, 255, 255, 0.8)',
+          backdropFilter: 'blur(10px)',
             padding: '20px 15px',
-            borderRadius: '8px',
-            boxShadow: '0 4px 20px rgba(0, 0, 0, 0.1)',
-            border: '1px solid rgba(180, 83, 9, 0.4)'
+            borderRadius: '12px',
+            boxShadow: '0 4px 12px rgba(0, 0, 0, 0.08), 0 2px 4px rgba(0, 0, 0, 0.06)',
+            border: '1px solid rgba(0, 0, 0, 0.05)'
           }}>
             {/* Member Image */}
             <div style={{
               width: '200px',
               height: '250px',
-              borderRadius: '8px',
-              border: '1px solid rgba(180, 83, 9, 0.4)',
+              borderRadius: '12px',
+              border: '1px solid rgba(0, 0, 0, 0.05)',
               margin: '0 auto 20px auto',
               overflow: 'hidden'
             }}>
@@ -171,7 +168,6 @@ Executive Committee
                 fontWeight: '600',
                 color: '#000',
                 marginBottom: '8px',
-                fontFamily: 'Times, "Times New Roman", serif'
               }}>
                 Avinash Sharma
               </h3>
@@ -181,7 +177,6 @@ Executive Committee
                 fontWeight: '500',
                 color: '#085c97',
                 marginBottom: '16px',
-                fontFamily: 'Times, "Times New Roman", serif'
               }}>
                 Producer and Partner
               </h4>
@@ -197,7 +192,6 @@ Executive Committee
                 lineHeight: '1.6',
                 color: '#374151',
                 textAlign: 'justify',
-                fontFamily: 'Times, "Times New Roman", serif'
               }}>
                 <p style={{ marginBottom: '16px' }}>Avinash Sharma, a dedicated advocate for social justice and a skilled data scientist, is the Founder and CEO of Far Too Young, Inc., a US-based non-profit organization. He is a key partner of Media Alert and Relief Foundation, contributing his expertise to their communication and education programs on gender equality, human trafficking, and child and women's rights.</p>
                 
@@ -210,18 +204,19 @@ Executive Committee
           
           {/* Right Member */}
           <div style={{
-            backgroundColor: '#fefefe',
+            backgroundColor: 'rgba(255, 255, 255, 0.8)',
+          backdropFilter: 'blur(10px)',
             padding: '20px 15px',
-            borderRadius: '8px',
-            boxShadow: '0 4px 20px rgba(0, 0, 0, 0.1)',
-            border: '1px solid rgba(180, 83, 9, 0.4)'
+            borderRadius: '12px',
+            boxShadow: '0 4px 12px rgba(0, 0, 0, 0.08), 0 2px 4px rgba(0, 0, 0, 0.06)',
+            border: '1px solid rgba(0, 0, 0, 0.05)'
           }}>
             {/* Member Image */}
             <div style={{
               width: '200px',
               height: '250px',
-              borderRadius: '8px',
-              border: '1px solid rgba(180, 83, 9, 0.4)',
+              borderRadius: '12px',
+              border: '1px solid rgba(0, 0, 0, 0.05)',
               margin: '0 auto 20px auto',
               overflow: 'hidden'
             }}>
@@ -251,7 +246,6 @@ Executive Committee
                 fontWeight: '600',
                 color: '#000',
                 marginBottom: '8px',
-                fontFamily: 'Times, "Times New Roman", serif'
               }}>
                 Bishwanath Ghimire
               </h3>
@@ -261,7 +255,6 @@ Executive Committee
                 fontWeight: '500',
                 color: '#085c97',
                 marginBottom: '16px',
-                fontFamily: 'Times, "Times New Roman", serif'
               }}>
                 General Manager
               </h4>
@@ -277,7 +270,6 @@ Executive Committee
                 lineHeight: '1.6',
                 color: '#374151',
                 textAlign: 'justify',
-                fontFamily: 'Times, "Times New Roman", serif'
               }}>
                 <p>Bishwanath Ghimire, also known as Lilhari Ghimire, has been a cornerstone of Media Alert since 1998, serving as General Manager and overseeing all communication projects and humanitarian initiatives. With a distinguished career spanning decades, he has held key positions at the Nepal Red Cross Society and consulted for organizations like UNDP, UNICEF, GTZ, WHO, and Save the Children USA. His extensive experience in the field is complemented by a Master's degree in Sociology and Political Science, and a tenure as a lecturer at Patan Multiple Campus, Tribhuvan University. Ghimire's deep understanding of Nepal's social and humanitarian landscape, combined with his strategic leadership, ensures the effective implementation of Media Alert's programs and initiatives.</p>
               </div>
@@ -295,18 +287,19 @@ Executive Committee
         }}>
           {/* Left Member */}
           <div style={{
-            backgroundColor: '#fefefe',
+            backgroundColor: 'rgba(255, 255, 255, 0.8)',
+          backdropFilter: 'blur(10px)',
             padding: '20px 15px',
-            borderRadius: '8px',
-            boxShadow: '0 4px 20px rgba(0, 0, 0, 0.1)',
-            border: '1px solid rgba(180, 83, 9, 0.4)'
+            borderRadius: '12px',
+            boxShadow: '0 4px 12px rgba(0, 0, 0, 0.08), 0 2px 4px rgba(0, 0, 0, 0.06)',
+            border: '1px solid rgba(0, 0, 0, 0.05)'
           }}>
             {/* Member Image */}
             <div style={{
               width: '200px',
               height: '250px',
-              borderRadius: '8px',
-              border: '1px solid rgba(180, 83, 9, 0.4)',
+              borderRadius: '12px',
+              border: '1px solid rgba(0, 0, 0, 0.05)',
               margin: '0 auto 20px auto',
               overflow: 'hidden'
             }}>
@@ -337,7 +330,6 @@ Executive Committee
                 fontWeight: '600',
                 color: '#000',
                 marginBottom: '8px',
-                fontFamily: 'Times, "Times New Roman", serif'
               }}>
                 Pradeep Upadhyay
               </h3>
@@ -347,7 +339,6 @@ Executive Committee
                 fontWeight: '500',
                 color: '#085c97',
                 marginBottom: '16px',
-                fontFamily: 'Times, "Times New Roman", serif'
               }}>
                 Head of Productions
               </h4>
@@ -363,7 +354,6 @@ Executive Committee
                 lineHeight: '1.6',
                 color: '#374151',
                 textAlign: 'justify',
-                fontFamily: 'Times, "Times New Roman", serif'
               }}>
                 <p style={{ marginBottom: '16px' }}>Pradeep Upadhyay, a seasoned audio-visual expert, has been a key member of Media Alert since 1999, leading the Production Department. With a distinguished career spanning decades, he has served as a technical consultant for numerous Nepali productions, including BBC, Nepal Television, and various private TV channels. As a skilled sound engineer, Upadhyay has designed numerous sound studios, radios, and FM stations across Nepal.</p>
                 
@@ -374,18 +364,19 @@ Executive Committee
           
           {/* Right Member */}
           <div style={{
-            backgroundColor: '#fefefe',
+            backgroundColor: 'rgba(255, 255, 255, 0.8)',
+          backdropFilter: 'blur(10px)',
             padding: '20px 15px',
-            borderRadius: '8px',
-            boxShadow: '0 4px 20px rgba(0, 0, 0, 0.1)',
-            border: '1px solid rgba(180, 83, 9, 0.4)'
+            borderRadius: '12px',
+            boxShadow: '0 4px 12px rgba(0, 0, 0, 0.08), 0 2px 4px rgba(0, 0, 0, 0.06)',
+            border: '1px solid rgba(0, 0, 0, 0.05)'
           }}>
             {/* Member Image */}
             <div style={{
               width: '200px',
               height: '250px',
-              borderRadius: '8px',
-              border: '1px solid rgba(180, 83, 9, 0.4)',
+              borderRadius: '12px',
+              border: '1px solid rgba(0, 0, 0, 0.05)',
               margin: '0 auto 20px auto',
               overflow: 'hidden'
             }}>
@@ -415,7 +406,6 @@ Executive Committee
                 fontWeight: '600',
                 color: '#000',
                 marginBottom: '8px',
-                fontFamily: 'Times, "Times New Roman", serif'
               }}>
                 Viplob Pratik
               </h3>
@@ -425,7 +415,6 @@ Executive Committee
                 fontWeight: '500',
                 color: '#085c97',
                 marginBottom: '16px',
-                fontFamily: 'Times, "Times New Roman", serif'
               }}>
                 Creative Head and Writer
               </h4>
@@ -441,7 +430,6 @@ Executive Committee
                 lineHeight: '1.6',
                 color: '#374151',
                 textAlign: 'justify',
-                fontFamily: 'Times, "Times New Roman", serif'
               }}>
                 <p style={{ marginBottom: '16px' }}>Viplob Pratik, a founding member of Media Alert, leads the Creative Department, overseeing the production of films, print materials, and campaign materials. A talented filmmaker, he has directed "Samarpan," "Abhilasha," and "Spandan," and contributed to publications like "Himal" and "Salil." As a renowned poet, his works, including "Unvanquished" and "A Person Kissed by the Moon," have been published in multiple languages and featured in international publications.</p>
                 
@@ -461,11 +449,12 @@ Executive Committee
         }}>
           {/* Board Members */}
           <div style={{
-            backgroundColor: '#fefefe',
+            backgroundColor: 'rgba(255, 255, 255, 0.8)',
+          backdropFilter: 'blur(10px)',
             padding: '30px 20px',
-            borderRadius: '8px',
-            boxShadow: '0 4px 20px rgba(0, 0, 0, 0.1)',
-            border: '1px solid rgba(180, 83, 9, 0.4)',
+            borderRadius: '12px',
+            boxShadow: '0 4px 12px rgba(0, 0, 0, 0.08), 0 2px 4px rgba(0, 0, 0, 0.06)',
+            border: '1px solid rgba(0, 0, 0, 0.05)',
             textAlign: 'center'
           }}>
             <h3 style={{
@@ -473,7 +462,6 @@ Executive Committee
               fontWeight: '600',
               color: '#000',
               marginBottom: '20px',
-              fontFamily: 'Times, "Times New Roman", serif',
               textAlign: 'left'
             }}>
               Board Members
@@ -491,7 +479,6 @@ Executive Committee
               fontSize: '16px',
               lineHeight: '1.8',
               color: '#374151',
-              fontFamily: 'Times, "Times New Roman", serif',
               textAlign: 'left'
             }}>
               <p><strong>Mr. Bijay Dhakal</strong></p>
@@ -503,11 +490,12 @@ Executive Committee
           
           {/* Legal Advisor */}
           <div style={{
-            backgroundColor: '#fefefe',
+            backgroundColor: 'rgba(255, 255, 255, 0.8)',
+          backdropFilter: 'blur(10px)',
             padding: '30px 20px',
-            borderRadius: '8px',
-            boxShadow: '0 4px 20px rgba(0, 0, 0, 0.1)',
-            border: '1px solid rgba(180, 83, 9, 0.4)',
+            borderRadius: '12px',
+            boxShadow: '0 4px 12px rgba(0, 0, 0, 0.08), 0 2px 4px rgba(0, 0, 0, 0.06)',
+            border: '1px solid rgba(0, 0, 0, 0.05)',
             textAlign: 'center'
           }}>
             <h3 style={{
@@ -515,7 +503,6 @@ Executive Committee
               fontWeight: '600',
               color: '#000',
               marginBottom: '20px',
-              fontFamily: 'Times, "Times New Roman", serif',
               textAlign: 'left'
             }}>
               Legal Advisor
@@ -533,7 +520,6 @@ Executive Committee
               fontSize: '16px',
               lineHeight: '1.8',
               color: '#374151',
-              fontFamily: 'Times, "Times New Roman", serif',
               textAlign: 'left'
             }}>
               <p><strong>Mr. Ganesh Dhungana</strong></p>
@@ -551,18 +537,18 @@ Executive Committee
         }}>
           {/* Banks */}
           <div style={{
-            backgroundColor: '#fefefe',
+            backgroundColor: 'rgba(255, 255, 255, 0.8)',
+          backdropFilter: 'blur(10px)',
             padding: '30px 20px',
-            borderRadius: '8px',
-            boxShadow: '0 4px 20px rgba(0, 0, 0, 0.1)',
-            border: '1px solid rgba(180, 83, 9, 0.4)'
+            borderRadius: '12px',
+            boxShadow: '0 4px 12px rgba(0, 0, 0, 0.08), 0 2px 4px rgba(0, 0, 0, 0.06)',
+            border: '1px solid rgba(0, 0, 0, 0.05)'
           }}>
             <h3 style={{
               fontSize: '24px',
               fontWeight: '600',
               color: '#000',
               marginBottom: '20px',
-              fontFamily: 'Times, "Times New Roman", serif',
               textAlign: 'left'
             }}>
               Banks
@@ -580,7 +566,6 @@ Executive Committee
               fontSize: '16px',
               lineHeight: '1.8',
               color: '#374151',
-              fontFamily: 'Times, "Times New Roman", serif',
               textAlign: 'left'
             }}>
               <p><strong>Global IME Bank</strong></p>
@@ -590,18 +575,18 @@ Executive Committee
           
           {/* Auditor */}
           <div style={{
-            backgroundColor: '#fefefe',
+            backgroundColor: 'rgba(255, 255, 255, 0.8)',
+          backdropFilter: 'blur(10px)',
             padding: '30px 20px',
-            borderRadius: '8px',
-            boxShadow: '0 4px 20px rgba(0, 0, 0, 0.1)',
-            border: '1px solid rgba(180, 83, 9, 0.4)'
+            borderRadius: '12px',
+            boxShadow: '0 4px 12px rgba(0, 0, 0, 0.08), 0 2px 4px rgba(0, 0, 0, 0.06)',
+            border: '1px solid rgba(0, 0, 0, 0.05)'
           }}>
             <h3 style={{
               fontSize: '24px',
               fontWeight: '600',
               color: '#000',
               marginBottom: '20px',
-              fontFamily: 'Times, "Times New Roman", serif',
               textAlign: 'left'
             }}>
               Auditor
@@ -619,7 +604,6 @@ Executive Committee
               fontSize: '16px',
               lineHeight: '1.8',
               color: '#374151',
-              fontFamily: 'Times, "Times New Roman", serif',
               textAlign: 'left'
             }}>
               <p><strong>Madhusudhan Dhakal And Company</strong></p>
@@ -637,18 +621,18 @@ Executive Committee
         }}>
           {/* Advisors */}
           <div style={{
-            backgroundColor: '#fefefe',
+            backgroundColor: 'rgba(255, 255, 255, 0.8)',
+          backdropFilter: 'blur(10px)',
             padding: '30px 20px',
-            borderRadius: '8px',
-            boxShadow: '0 4px 20px rgba(0, 0, 0, 0.1)',
-            border: '1px solid rgba(180, 83, 9, 0.4)'
+            borderRadius: '12px',
+            boxShadow: '0 4px 12px rgba(0, 0, 0, 0.08), 0 2px 4px rgba(0, 0, 0, 0.06)',
+            border: '1px solid rgba(0, 0, 0, 0.05)'
           }}>
             <h3 style={{
               fontSize: '24px',
               fontWeight: '600',
               color: '#000',
               marginBottom: '20px',
-              fontFamily: 'Times, "Times New Roman", serif',
               textAlign: 'left'
             }}>
               Advisors
@@ -666,7 +650,6 @@ Executive Committee
               fontSize: '16px',
               lineHeight: '1.8',
               color: '#374151',
-              fontFamily: 'Times, "Times New Roman", serif',
               textAlign: 'left'
             }}>
               <p><strong>Mrs. Chadni Joshi</strong>, Former UNIFEM Regional Director, Women's Rights Champion</p>
@@ -681,18 +664,18 @@ Executive Committee
           
           {/* Experts */}
           <div style={{
-            backgroundColor: '#fefefe',
+            backgroundColor: 'rgba(255, 255, 255, 0.8)',
+          backdropFilter: 'blur(10px)',
             padding: '30px 20px',
-            borderRadius: '8px',
-            boxShadow: '0 4px 20px rgba(0, 0, 0, 0.1)',
-            border: '1px solid rgba(180, 83, 9, 0.4)'
+            borderRadius: '12px',
+            boxShadow: '0 4px 12px rgba(0, 0, 0, 0.08), 0 2px 4px rgba(0, 0, 0, 0.06)',
+            border: '1px solid rgba(0, 0, 0, 0.05)'
           }}>
             <h3 style={{
               fontSize: '24px',
               fontWeight: '600',
               color: '#000',
               marginBottom: '20px',
-              fontFamily: 'Times, "Times New Roman", serif',
               textAlign: 'left'
             }}>
               Experts
@@ -710,7 +693,6 @@ Executive Committee
               fontSize: '16px',
               lineHeight: '1.8',
               color: '#374151',
-              fontFamily: 'Times, "Times New Roman", serif',
               textAlign: 'left'
             }}>
               <p><strong>Dr. Hemang Dixit</strong> (Health Education)</p>
@@ -726,18 +708,18 @@ Executive Committee
         <div style={{
           maxWidth: '1200px',
           margin: '15px auto 0 auto',
-          backgroundColor: '#fefefe',
+          backgroundColor: 'rgba(255, 255, 255, 0.8)',
+          backdropFilter: 'blur(10px)',
           padding: '60px 40px',
-          borderRadius: '8px',
-          boxShadow: '0 4px 20px rgba(0, 0, 0, 0.1)',
-          border: '1px solid rgba(180, 83, 9, 0.4)'
+          borderRadius: '12px',
+          boxShadow: '0 4px 12px rgba(0, 0, 0, 0.08), 0 2px 4px rgba(0, 0, 0, 0.06)',
+          border: '1px solid rgba(0, 0, 0, 0.05)'
         }}>
           <h3 style={{
             fontSize: '24px',
             fontWeight: '600',
             color: '#000',
             marginBottom: '20px',
-            fontFamily: 'Times, "Times New Roman", serif',
             textAlign: 'center'
           }}>
             Other Team Members
@@ -763,7 +745,6 @@ Executive Committee
               fontSize: '16px',
               lineHeight: '1.8',
               color: '#374151',
-              fontFamily: 'Times, "Times New Roman", serif',
               textAlign: 'center'
             }}>
               <p><strong>Lata Poudel:</strong> Senior Administrative Officer</p>
@@ -794,7 +775,6 @@ Executive Committee
               fontSize: '16px',
               lineHeight: '1.8',
               color: '#374151',
-              fontFamily: 'Times, "Times New Roman", serif',
               textAlign: 'center'
             }}>
               <p><strong>Sanjeev Phuyal:</strong> Writer, Translator</p>

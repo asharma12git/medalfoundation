@@ -4,18 +4,20 @@ import Home from './pages/Home'
 import About from './pages/About'
 import Members from './pages/Members'
 import ProjectsCollaborators from './pages/ProjectsCollaborators'
+import ReliefHumanitarian from './pages/ReliefHumanitarian'
 import Footer from './components/Footer'
 
 function App() {
   return (
     <Router>
-      <div style={{ minHeight: '100vh', backgroundColor: 'white', fontFamily: 'Inter, sans-serif' }}>
+      <div style={{ minHeight: '100vh', backgroundColor: 'white' }}>
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/members" element={<Members />} />
           <Route path="/projects" element={<ProjectsCollaborators />} />
+          <Route path="/relief" element={<ReliefHumanitarian />} />
         </Routes>
         <Footer />
       </div>
