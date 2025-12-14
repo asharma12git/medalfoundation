@@ -160,29 +160,31 @@ function Header() {
 
           {/* CTA Button */}
           <div style={{ display: 'flex', alignItems: 'center' }}>
-            <button style={{
-              padding: '12px 24px',
-              fontSize: '14px',
-              fontWeight: '500',
-              color: 'white',
-              background: 'linear-gradient(135deg, #085c97 0%, #0a6bb0 100%)',
-              border: 'none',
-              borderRadius: '25px',
-              cursor: 'pointer',
-              whiteSpace: 'nowrap',
-              boxShadow: '0 4px 12px rgba(8, 92, 151, 0.3)',
-              transition: 'all 0.3s ease'
-            }}
-            onMouseEnter={(e) => {
-              e.target.style.transform = 'translateY(-2px)';
-              e.target.style.boxShadow = '0 8px 20px rgba(8, 92, 151, 0.4)';
-            }}
-            onMouseLeave={(e) => {
-              e.target.style.transform = 'translateY(0)';
-              e.target.style.boxShadow = '0 4px 12px rgba(8, 92, 151, 0.3)';
-            }}>
-              Contact Us
-            </button>
+            <Link to="/contact" style={{ textDecoration: 'none' }}>
+              <button style={{
+                padding: '12px 24px',
+                fontSize: '14px',
+                fontWeight: '500',
+                color: 'white',
+                background: 'linear-gradient(135deg, #085c97 0%, #0a6bb0 100%)',
+                border: 'none',
+                borderRadius: '25px',
+                cursor: 'pointer',
+                whiteSpace: 'nowrap',
+                boxShadow: '0 4px 12px rgba(8, 92, 151, 0.3)',
+                transition: 'all 0.3s ease'
+              }}
+              onMouseEnter={(e) => {
+                e.target.style.transform = 'translateY(-2px)';
+                e.target.style.boxShadow = '0 8px 20px rgba(8, 92, 151, 0.4)';
+              }}
+              onMouseLeave={(e) => {
+                e.target.style.transform = 'translateY(0)';
+                e.target.style.boxShadow = '0 4px 12px rgba(8, 92, 151, 0.3)';
+              }}>
+                Contact Us
+              </button>
+            </Link>
           </div>
         </div>
       </div>

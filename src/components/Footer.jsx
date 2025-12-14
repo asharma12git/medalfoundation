@@ -62,6 +62,13 @@ function Footer() {
             }}>
               ravibaralfilms@gmail.com
             </a>
+            <a href="mailto:moran.edu.fund@fartooyoung.org" style={{ 
+              fontSize: '14px', 
+              color: '#085c97', 
+              textDecoration: 'none'
+            }}>
+              moran.edu.fund@fartooyoung.org
+            </a>
           </div>
         </div>
       </div>
