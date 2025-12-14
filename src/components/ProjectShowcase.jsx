@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom'
+
 function ProjectShowcase() {
   const currentProjects = {
     mainImages: [
@@ -29,83 +31,83 @@ function ProjectShowcase() {
       <div style={{ maxWidth: '1400px', margin: '0 auto' }}>
         {/* Section Headers */}
         <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '48px', marginBottom: '60px' }}>
-          <div style={{
-            cursor: 'pointer',
-            transition: 'all 0.3s ease'
-          }}
-          onMouseEnter={(e) => {
-            e.currentTarget.querySelector('h2').style.color = '#085c97'
-            e.currentTarget.querySelector('h2').style.borderBottomColor = '#085c97'
-            e.currentTarget.querySelector('h2').style.filter = 'drop-shadow(0 3px 6px rgba(8, 92, 151, 0.3))'
-            e.currentTarget.querySelector('span').style.transform = 'translateX(4px)'
-          }}
-          onMouseLeave={(e) => {
-            e.currentTarget.querySelector('h2').style.color = '#171717'
-            e.currentTarget.querySelector('h2').style.borderBottomColor = '#085c97'
-            e.currentTarget.querySelector('h2').style.filter = 'none'
-            e.currentTarget.querySelector('span').style.transform = 'translateX(0)'
-          }}>
-            <h2 style={{
-              fontSize: '24px',
-              fontWeight: '600',
-              color: '#171717',
-              margin: 0,
-              textAlign: 'center',
-              borderBottom: '3px solid #085c97',
-              paddingBottom: '12px',
-              transition: 'color 0.2s ease',
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
-              gap: '8px'
+          <Link to="/child-marriage-in-nepal" style={{ textDecoration: 'none' }}>
+            <div style={{
+              cursor: 'pointer',
+              transition: 'all 0.3s ease'
+            }}
+            onMouseEnter={(e) => {
+              e.currentTarget.querySelector('h2').style.color = '#085c97'
+              e.currentTarget.querySelector('h2').style.filter = 'drop-shadow(0 3px 6px rgba(8, 92, 151, 0.3))'
+              e.currentTarget.querySelector('span').style.transform = 'translateX(4px)'
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.querySelector('h2').style.color = '#171717'
+              e.currentTarget.querySelector('h2').style.filter = 'none'
+              e.currentTarget.querySelector('span').style.transform = 'translateX(0)'
             }}>
-              Current Projects
-              <span style={{
-                fontSize: '20px',
-                color: '#085c97',
-                transition: 'transform 0.2s ease'
-              }}>→</span>
-            </h2>
-          </div>
+              <h2 style={{
+                fontSize: '24px',
+                fontWeight: '600',
+                color: '#171717',
+                margin: 0,
+                textAlign: 'center',
+                borderBottom: '3px solid #085c97',
+                paddingBottom: '12px',
+                transition: 'color 0.2s ease',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                gap: '8px'
+              }}>
+                Current Projects
+                <span style={{
+                  fontSize: '20px',
+                  color: '#085c97',
+                  transition: 'transform 0.2s ease'
+                }}>→</span>
+              </h2>
+            </div>
+          </Link>
           
-          <div style={{
-            cursor: 'pointer',
-            transition: 'all 0.3s ease'
-          }}
-          onMouseEnter={(e) => {
-            e.currentTarget.querySelector('h2').style.color = '#a47c43'
-            e.currentTarget.querySelector('h2').style.borderBottomColor = '#a47c43'
-            e.currentTarget.querySelector('h2').style.filter = 'drop-shadow(0 3px 6px rgba(164, 124, 67, 0.3))'
-            e.currentTarget.querySelector('span').style.transform = 'translateX(4px)'
-          }}
-          onMouseLeave={(e) => {
-            e.currentTarget.querySelector('h2').style.color = '#171717'
-            e.currentTarget.querySelector('h2').style.borderBottomColor = '#a47c43'
-            e.currentTarget.querySelector('h2').style.filter = 'none'
-            e.currentTarget.querySelector('span').style.transform = 'translateX(0)'
-          }}>
-            <h2 style={{
-              fontSize: '24px',
-              fontWeight: '600',
-              color: '#171717',
-              margin: 0,
-              textAlign: 'center',
-              borderBottom: '3px solid #a47c43',
-              paddingBottom: '12px',
-              transition: 'color 0.2s ease',
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
-              gap: '8px'
+          <Link to="/projects" style={{ textDecoration: 'none' }}>
+            <div style={{
+              cursor: 'pointer',
+              transition: 'all 0.3s ease'
+            }}
+            onMouseEnter={(e) => {
+              e.currentTarget.querySelector('h2').style.color = '#a47c43'
+              e.currentTarget.querySelector('h2').style.filter = 'drop-shadow(0 3px 6px rgba(164, 124, 67, 0.3))'
+              e.currentTarget.querySelector('span').style.transform = 'translateX(4px)'
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.querySelector('h2').style.color = '#171717'
+              e.currentTarget.querySelector('h2').style.filter = 'none'
+              e.currentTarget.querySelector('span').style.transform = 'translateX(0)'
             }}>
-              Past Projects
-              <span style={{
-                fontSize: '20px',
-                color: '#a47c43',
-                transition: 'transform 0.2s ease'
-              }}>→</span>
-            </h2>
-          </div>
+              <h2 style={{
+                fontSize: '24px',
+                fontWeight: '600',
+                color: '#171717',
+                margin: 0,
+                textAlign: 'center',
+                borderBottom: '3px solid #a47c43',
+                paddingBottom: '12px',
+                transition: 'color 0.2s ease',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                gap: '8px'
+              }}>
+                Past Projects
+                <span style={{
+                  fontSize: '20px',
+                  color: '#a47c43',
+                  transition: 'transform 0.2s ease'
+                }}>→</span>
+              </h2>
+            </div>
+          </Link>
         </div>
 
         {/* Row 1: Main Images */}

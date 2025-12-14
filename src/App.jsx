@@ -6,6 +6,7 @@ import Members from './pages/Members'
 import ProjectsCollaborators from './pages/ProjectsCollaborators'
 import ReliefHumanitarian from './pages/ReliefHumanitarian'
 import Gallery from './pages/Gallery'
+import ChildMarriageNepal from './pages/ChildMarriageNepal'
 import Footer from './components/Footer'
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
           <Route path="/projects" element={<ProjectsCollaborators />} />
           <Route path="/relief" element={<ReliefHumanitarian />} />
           <Route path="/gallery" element={<Gallery />} />
+          <Route path="/child-marriage-in-nepal" element={<ChildMarriageNepal />} />
         </Routes>
         <Footer />
       </div>
