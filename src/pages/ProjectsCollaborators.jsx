@@ -183,6 +183,725 @@ function ProjectsCollaborators() {
           </div>
         </div>
       </section>
+
+      
+      {/* Past & Present Collaborators Title */}
+      <section style={{
+        backgroundColor: 'white',
+        padding: '20px 20px 60px 20px'
+      }}>
+        <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
+          <h1 style={{
+            fontSize: '36px',
+            fontWeight: '700',
+            color: '#000',
+            textAlign: 'center',
+            marginBottom: '16px',
+            lineHeight: '1.2',
+            textDecoration: 'underline',
+            textDecorationThickness: '2px',
+            textUnderlineOffset: '8px',
+            fontFamily: 'Times, "Times New Roman", serif'
+          }}>
+            Past & Present Collaborators
+          </h1>
+        </div>
+      </section>
+      
+      {/* Collaborators Content Section */}
+      <section style={{
+        backgroundColor: 'white',
+        padding: '0px 20px 60px 20px'
+      }}>
+        <div style={{
+          maxWidth: '1200px',
+          margin: '0 auto',
+          backgroundColor: '#fefefe',
+          padding: '60px 40px',
+          borderRadius: '8px',
+          boxShadow: '0 4px 20px rgba(0, 0, 0, 0.1)',
+          border: '1px solid #e5e7eb'
+        }}>
+          
+          {/* Affiliation Section at top */}
+          <div style={{
+            marginBottom: '20px'
+          }}>
+            <h3 style={{
+              fontSize: '18px',
+              fontWeight: '600',
+              color: '#085c97',
+              marginBottom: '20px',
+              textAlign: 'left'
+            }}>
+              AFFILIATION
+            </h3>
+            
+            <div style={{
+              textAlign: 'left'
+            }}>
+              <img 
+                src="/src/assets/images/pages/projects-and-collaborators/past-and-present-colaborators/swc.webp" 
+                alt="Social Welfare Council Nepal" 
+                style={{
+                  width: '300px',
+                  maxWidth: '100%',
+                  height: 'auto',
+                  display: 'block'
+                }} 
+              />
+            </div>
+          </div>
+          
+          {/* Partner Organizations */}
+          <h3 style={{
+            fontSize: '18px',
+            fontWeight: '600',
+            color: '#085c97',
+            marginBottom: '20px',
+            textAlign: 'left'
+          }}>
+            PARTNER ORGANIZATIONS
+          </h3>
+          
+          {/* 6-Column Grid for Logos */}
+          <div style={{
+            display: 'grid',
+            gridTemplateColumns: 'repeat(6, 1fr)',
+            gap: '20px',
+            alignItems: 'center'
+          }}>
+            {/* Logo placeholders - will be replaced with actual logos */}
+            <div style={{
+              aspectRatio: '1',
+              borderRadius: '8px',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              padding: '10px'
+            }}>
+              <img 
+                src="/src/assets/images/pages/projects-and-collaborators/past-and-present-colaborators/Govt-Nepal.png" 
+                alt="Government of Nepal" 
+                style={{
+                  width: '100%',
+                  height: '100%',
+                  objectFit: 'contain'
+                }} 
+              />
+            </div>
+            <div style={{
+              aspectRatio: '1',
+              borderRadius: '8px',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              padding: '10px'
+            }}>
+              <img 
+                src="/src/assets/images/pages/projects-and-collaborators/past-and-present-colaborators/UKAID.png" 
+                alt="UKAID" 
+                style={{
+                  width: '100%',
+                  height: '100%',
+                  objectFit: 'contain'
+                }} 
+              />
+            </div>
+            <div style={{
+              aspectRatio: '1',
+              borderRadius: '8px',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              padding: '10px'
+            }}>
+              <img 
+                src="/src/assets/images/pages/projects-and-collaborators/past-and-present-colaborators/DFID.png" 
+                alt="DFID" 
+                style={{
+                  width: '100%',
+                  height: '100%',
+                  objectFit: 'contain'
+                }} 
+              />
+            </div>
+            <div style={{
+              aspectRatio: '1',
+              borderRadius: '8px',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              padding: '10px'
+            }}>
+              <img 
+                src="/src/assets/images/pages/projects-and-collaborators/past-and-present-colaborators/USAID.png" 
+                alt="USAID" 
+                style={{
+                  width: '100%',
+                  height: '100%',
+                  objectFit: 'contain'
+                }} 
+              />
+            </div>
+            <div style={{
+              aspectRatio: '1',
+              borderRadius: '8px',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              padding: '10px'
+            }}>
+              <img 
+                src="/src/assets/images/pages/projects-and-collaborators/past-and-present-colaborators/bill-and-melinda-gates-foundation.png" 
+                alt="Bill & Melinda Gates Foundation" 
+                style={{
+                  width: '100%',
+                  height: '100%',
+                  objectFit: 'contain'
+                }} 
+              />
+            </div>
+            <div style={{
+              aspectRatio: '1',
+              borderRadius: '8px',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              padding: '10px'
+            }}>
+              <img 
+                src="/src/assets/images/pages/projects-and-collaborators/past-and-present-colaborators/UN-Women.png" 
+                alt="UN Women" 
+                style={{
+                  width: '100%',
+                  height: '100%',
+                  objectFit: 'contain'
+                }} 
+              />
+            </div>
+            
+            {/* Second Row */}
+            <div style={{
+              aspectRatio: '1',
+              borderRadius: '8px',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              padding: '10px'
+            }}>
+              <img 
+                src="/src/assets/images/pages/projects-and-collaborators/past-and-present-colaborators/PSI.png" 
+                alt="PSI" 
+                style={{
+                  width: '100%',
+                  height: '100%',
+                  objectFit: 'contain'
+                }} 
+              />
+            </div>
+            
+            <div style={{
+              aspectRatio: '1',
+              borderRadius: '8px',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              padding: '10px'
+            }}>
+              <img 
+                src="/src/assets/images/pages/projects-and-collaborators/past-and-present-colaborators/UNICEF.png" 
+                alt="UNICEF" 
+                style={{
+                  width: '100%',
+                  height: '100%',
+                  objectFit: 'contain'
+                }} 
+              />
+            </div>
+            
+            <div style={{
+              aspectRatio: '1',
+              borderRadius: '8px',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              padding: '10px'
+            }}>
+              <img 
+                src="/src/assets/images/pages/projects-and-collaborators/past-and-present-colaborators/john-hopkins.png" 
+                alt="Johns Hopkins University" 
+                style={{
+                  width: '100%',
+                  height: '100%',
+                  objectFit: 'contain'
+                }} 
+              />
+            </div>
+            
+            <div style={{
+              aspectRatio: '1',
+              borderRadius: '8px',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              padding: '10px'
+            }}>
+              <img 
+                src="/src/assets/images/pages/projects-and-collaborators/past-and-present-colaborators/UNODC.png" 
+                alt="UNODC" 
+                style={{
+                  width: '100%',
+                  height: '100%',
+                  objectFit: 'contain'
+                }} 
+              />
+            </div>
+            
+            <div style={{
+              aspectRatio: '1',
+              borderRadius: '8px',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              padding: '10px'
+            }}>
+              <img 
+                src="/src/assets/images/pages/projects-and-collaborators/past-and-present-colaborators/John-Snow-Inc.png" 
+                alt="John Snow, Inc." 
+                style={{
+                  width: '100%',
+                  height: '100%',
+                  objectFit: 'contain'
+                }} 
+              />
+            </div>
+            
+            <div style={{
+              aspectRatio: '1',
+              borderRadius: '8px',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              padding: '10px'
+            }}>
+              <img 
+                src="/src/assets/images/pages/projects-and-collaborators/past-and-present-colaborators/World-Bank-Group.png" 
+                alt="World Bank Group" 
+                style={{
+                  width: '100%',
+                  height: '100%',
+                  objectFit: 'contain'
+                }} 
+              />
+            </div>
+            
+            {/* Third Row */}
+            <div style={{
+              aspectRatio: '1',
+              borderRadius: '8px',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              padding: '10px'
+            }}>
+              <img 
+                src="/src/assets/images/pages/projects-and-collaborators/past-and-present-colaborators/SAARC.png" 
+                alt="SAARC" 
+                style={{
+                  width: '100%',
+                  height: '100%',
+                  objectFit: 'contain'
+                }} 
+              />
+            </div>
+            
+            <div style={{
+              aspectRatio: '1',
+              borderRadius: '8px',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              padding: '10px'
+            }}>
+              <img 
+                src="/src/assets/images/pages/projects-and-collaborators/past-and-present-colaborators/European-Union.png" 
+                alt="European Union" 
+                style={{
+                  width: '100%',
+                  height: '100%',
+                  objectFit: 'contain'
+                }} 
+              />
+            </div>
+            
+            <div style={{
+              aspectRatio: '1',
+              borderRadius: '8px',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              padding: '10px'
+            }}>
+              <img 
+                src="/src/assets/images/pages/projects-and-collaborators/past-and-present-colaborators/UNDP.png" 
+                alt="UNDP" 
+                style={{
+                  width: '100%',
+                  height: '100%',
+                  objectFit: 'contain'
+                }} 
+              />
+            </div>
+            
+            <div style={{
+              aspectRatio: '1',
+              borderRadius: '8px',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              padding: '10px'
+            }}>
+              <img 
+                src="/src/assets/images/pages/projects-and-collaborators/past-and-present-colaborators/ADB.png" 
+                alt="ADB" 
+                style={{
+                  width: '100%',
+                  height: '100%',
+                  objectFit: 'contain'
+                }} 
+              />
+            </div>
+            
+            <div style={{
+              aspectRatio: '1',
+              borderRadius: '8px',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              padding: '10px'
+            }}>
+              <img 
+                src="/src/assets/images/pages/projects-and-collaborators/past-and-present-colaborators/FHI-Family-Health-International.png" 
+                alt="FHI Family Health International" 
+                style={{
+                  width: '100%',
+                  height: '100%',
+                  objectFit: 'contain'
+                }} 
+              />
+            </div>
+            
+            <div style={{
+              aspectRatio: '1',
+              borderRadius: '8px',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              padding: '10px'
+            }}>
+              <img 
+                src="/src/assets/images/pages/projects-and-collaborators/past-and-present-colaborators/JICA.png" 
+                alt="JICA" 
+                style={{
+                  width: '100%',
+                  height: '100%',
+                  objectFit: 'contain'
+                }} 
+              />
+            </div>
+            
+            {/* Fourth Row */}
+            <div style={{
+              aspectRatio: '1',
+              borderRadius: '8px',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              padding: '10px'
+            }}>
+              <img 
+                src="/src/assets/images/pages/projects-and-collaborators/past-and-present-colaborators/ICRC-International-Comite-Geneve.png" 
+                alt="ICRC International Committee Geneva" 
+                style={{
+                  width: '100%',
+                  height: '100%',
+                  objectFit: 'contain'
+                }} 
+              />
+            </div>
+            
+            <div style={{
+              aspectRatio: '1',
+              borderRadius: '8px',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              padding: '10px'
+            }}>
+              <img 
+                src="/src/assets/images/pages/projects-and-collaborators/past-and-present-colaborators/Embassy-Of-India.png" 
+                alt="Embassy of India" 
+                style={{
+                  width: '100%',
+                  height: '100%',
+                  objectFit: 'contain'
+                }} 
+              />
+            </div>
+            
+            <div style={{
+              aspectRatio: '1',
+              borderRadius: '8px',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              padding: '10px'
+            }}>
+              <img 
+                src="/src/assets/images/pages/projects-and-collaborators/past-and-present-colaborators/BP-Koirala-India-Nepal-Foundation.png" 
+                alt="BP Koirala India Nepal Foundation" 
+                style={{
+                  width: '100%',
+                  height: '100%',
+                  objectFit: 'contain'
+                }} 
+              />
+            </div>
+            
+            <div style={{
+              aspectRatio: '1',
+              borderRadius: '8px',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              padding: '10px'
+            }}>
+              <img 
+                src="/src/assets/images/pages/projects-and-collaborators/past-and-present-colaborators/HEALTHRIGHT-INTERNATIONAL.png" 
+                alt="HealthRight International" 
+                style={{
+                  width: '100%',
+                  height: '100%',
+                  objectFit: 'contain'
+                }} 
+              />
+            </div>
+            
+            <div style={{
+              aspectRatio: '1',
+              borderRadius: '8px',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              padding: '10px'
+            }}>
+              <img 
+                src="/src/assets/images/pages/projects-and-collaborators/past-and-present-colaborators/Nepal-Red-Cross-Society.png" 
+                alt="Nepal Red Cross Society" 
+                style={{
+                  width: '100%',
+                  height: '100%',
+                  objectFit: 'contain'
+                }} 
+              />
+            </div>
+            
+            <div style={{
+              aspectRatio: '1',
+              borderRadius: '8px',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              padding: '10px'
+            }}>
+              <img 
+                src="/src/assets/images/pages/projects-and-collaborators/past-and-present-colaborators/Jayanti-Memorial-Trust.png" 
+                alt="Jayanti Memorial Trust" 
+                style={{
+                  width: '100%',
+                  height: '100%',
+                  objectFit: 'contain'
+                }} 
+              />
+            </div>
+            
+            {/* Fifth Row */}
+            <div style={{
+              aspectRatio: '1',
+              borderRadius: '8px',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              padding: '10px'
+            }}>
+              <img 
+                src="/src/assets/images/pages/projects-and-collaborators/past-and-present-colaborators/THE-CARTER-CENTER.png" 
+                alt="The Carter Center" 
+                style={{
+                  width: '100%',
+                  height: '100%',
+                  objectFit: 'contain'
+                }} 
+              />
+            </div>
+            
+            <div style={{
+              aspectRatio: '1',
+              borderRadius: '8px',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              padding: '10px'
+            }}>
+              <img 
+                src="/src/assets/images/pages/projects-and-collaborators/past-and-present-colaborators/FLORIDA-STATE-UNIVERSITY.png" 
+                alt="Florida State University" 
+                style={{
+                  width: '100%',
+                  height: '100%',
+                  objectFit: 'contain'
+                }} 
+              />
+            </div>
+            
+            <div style={{
+              aspectRatio: '1',
+              borderRadius: '8px',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              padding: '10px'
+            }}>
+              <img 
+                src="/src/assets/images/pages/projects-and-collaborators/past-and-present-colaborators/Jhpiego-An-Affiliate-of-Johns-Hopkins-University.png" 
+                alt="Jhpiego - An Affiliate of Johns Hopkins University" 
+                style={{
+                  width: '100%',
+                  height: '100%',
+                  objectFit: 'contain'
+                }} 
+              />
+            </div>
+            
+            <div style={{
+              aspectRatio: '1',
+              borderRadius: '8px',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              padding: '10px'
+            }}>
+              <img 
+                src="/src/assets/images/pages/projects-and-collaborators/past-and-present-colaborators/DOCTORS-OF-THE-WORLD.png" 
+                alt="Doctors of the World" 
+                style={{
+                  width: '100%',
+                  height: '100%',
+                  objectFit: 'contain'
+                }} 
+              />
+            </div>
+            
+            <div style={{
+              aspectRatio: '1',
+              borderRadius: '8px',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              padding: '10px'
+            }}>
+              <img 
+                src="/src/assets/images/pages/projects-and-collaborators/past-and-present-colaborators/swc.webp" 
+                alt="Social Welfare Council Nepal" 
+                style={{
+                  width: '100%',
+                  height: '100%',
+                  objectFit: 'contain'
+                }} 
+              />
+            </div>
+            
+            <div style={{
+              aspectRatio: '1',
+              borderRadius: '8px',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              padding: '10px'
+            }}>
+              <img 
+                src="/src/assets/images/pages/projects-and-collaborators/past-and-present-colaborators/esara.png" 
+                alt="eSARA Nepal" 
+                style={{
+                  width: '100%',
+                  height: '100%',
+                  objectFit: 'contain'
+                }} 
+              />
+            </div>
+            
+            {/* Sixth Row */}
+            <div style={{
+              aspectRatio: '1',
+              borderRadius: '8px',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              padding: '10px'
+            }}>
+              <img 
+                src="/src/assets/images/pages/projects-and-collaborators/past-and-present-colaborators/CAPTIVE-DAUGHTERS-FILMS.png" 
+                alt="Captive Daughters Films" 
+                style={{
+                  width: '100%',
+                  height: '100%',
+                  objectFit: 'contain'
+                }} 
+              />
+            </div>
+            
+            <div style={{
+              aspectRatio: '1',
+              borderRadius: '8px',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              padding: '10px'
+            }}>
+              <img 
+                src="/src/assets/images/pages/projects-and-collaborators/past-and-present-colaborators/Nepal_Medical_Association_Logo.jpg" 
+                alt="Nepal Medical Association" 
+                style={{
+                  width: '100%',
+                  height: '100%',
+                  objectFit: 'contain'
+                }} 
+              />
+            </div>
+            
+            <div style={{
+              aspectRatio: '1',
+              borderRadius: '8px',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              padding: '10px'
+            }}>
+              <img 
+                src="/src/assets/images/shared/Far-Too-Young-c4.jpg" 
+                alt="Far Too Young" 
+                style={{
+                  width: '100%',
+                  height: '100%',
+                  objectFit: 'contain'
+                }} 
+              />
+            </div>
+          </div>
+
+        </div>
+      </section>
     </div>
   )
 }
