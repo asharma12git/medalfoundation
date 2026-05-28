@@ -55,7 +55,7 @@ Changes to `docs/`, `deployment/`, or `README.md` do **not** trigger a deploy.
 
 ```bash
 npm run build
-aws s3 sync dist/ s3://medalfoundation-frontend-production --delete
+aws s3 sync dist/ s3://medal-prod-frontend --delete
 aws cloudfront create-invalidation --distribution-id E3QDO1V24F450J --paths "/*"
 ```
 
@@ -63,11 +63,16 @@ aws cloudfront create-invalidation --distribution-id E3QDO1V24F450J --paths "/*"
 
 | Resource | Value |
 |----------|-------|
-| S3 Bucket | `medalfoundation-frontend-production` |
-| CloudFront | `E3QDO1V24F450J` |
-| Pipeline | `medalfoundation-prod-frontend` |
-| CodeBuild | `medalfoundation-prod-frontend-build` |
-| Domain | `www.medalfoundation.org` + `medalfoundation.org` |
+| S3 Bucket (prod) | `medal-prod-frontend` |
+| S3 Bucket (stg) | `medal-stg-frontend` |
+| CloudFront (prod) | `E3QDO1V24F450J` |
+| CloudFront (stg) | `E2T356PZNQLQJQ` |
+| Pipeline (prod) | `medal-prod-frontend-pipeline` |
+| Pipeline (stg) | `medal-stg-frontend-pipeline` |
+| CodeBuild (prod) | `medal-prod-frontend-build` |
+| CodeBuild (stg) | `medal-stg-frontend-build` |
+| Domain (prod) | `www.medalfoundation.org` + `medalfoundation.org` |
+| Domain (stg) | `staging.medalfoundation.org` |
 
 ## License
 
