@@ -1,92 +1,73 @@
 # Medal Foundation - Official Website
 
-A minimal, modern static website for Medal Foundation built with React and Tailwind CSS.
-
-## Features
-
-- **Minimal Design**: Clean, modern interface inspired by industry leaders
-- **Responsive**: Mobile-first approach with Tailwind CSS
-- **Performance**: Optimized static site with Vite
-- **Neutral Theme**: Professional color palette with subtle animations
+A minimal, modern static website for Medal Foundation built with React and Tailwind CSS. Live at [www.medalfoundation.org](https://www.medalfoundation.org).
 
 ## Tech Stack
 
-- **Frontend**: React 18, Vite
-- **Styling**: Tailwind CSS with Inter font
-- **Deployment**: AWS S3 + CloudFront (planned)
+- **Frontend**: React 18, Vite, Tailwind CSS, React Router
+- **Hosting**: AWS S3 + CloudFront CDN
+- **DNS**: Route 53
+- **SSL**: ACM Certificate
+- **CI/CD**: CodePipeline V2 (instant webhook, path-based triggers)
 
-## Quick Start
+## Features
 
-1. **Install Dependencies**
-   ```bash
-   npm install
-   ```
-
-2. **Start Development Server**
-   ```bash
-   npm run dev
-   ```
-
-3. **Build for Production**
-   ```bash
-   npm run build
-   ```
+- Minimal, modern design with neutral color palette
+- Mobile-responsive with Tailwind CSS
+- Multi-page with React Router (Home, About, Programs, Contact, etc.)
+- Optimized static site with Vite
 
 ## Project Structure
 
 ```
 medalfoundation/
 ├── src/
-│   ├── components/
-│   │   ├── Header.jsx       # Navigation header
-│   │   ├── Hero.jsx         # Hero section
-│   │   ├── About.jsx        # About/mission section
-│   │   └── Footer.jsx       # Site footer
-│   ├── App.jsx              # Main app component
-│   └── index.css            # Tailwind styles
-├── docs/
-│   ├── 1-planning/          # Project planning documents
-│   ├── 2-system-design/     # Architecture documentation
-│   ├── 3-deployments/       # Deployment guides
-│   └── 4-testing/           # Testing documentation
+│   ├── components/     # Reusable UI components
+│   ├── pages/          # Page components
+│   ├── assets/         # Images and static assets
+│   ├── App.jsx         # Main app with routing
+│   └── index.css       # Tailwind styles
+├── public/             # Static public assets
 ├── deployment/
-│   ├── staging/             # Staging deployment scripts
-│   └── production/          # Production deployment scripts
+│   └── prod-frontend-pipeline.yml  # V2 pipeline template
+├── docs/               # Documentation
 └── README.md
 ```
 
-## Design Philosophy
+## Quick Start
 
-- **Minimal**: Clean, uncluttered interface
-- **Modern**: Contemporary design patterns
-- **Neutral**: Professional color palette
-- **Accessible**: WCAG compliant design
-- **Fast**: Optimized for performance
+```bash
+npm install
+npm run dev
+```
 
-## Future Deployment
+## Deployment
 
-This project is designed to be deployed as a static site on AWS:
-- **S3**: Static website hosting
-- **CloudFront**: Global CDN distribution
-- **Route 53**: Custom domain management
-- **Certificate Manager**: SSL/TLS certificates
+- **Production**: Auto-deploys via V2 pipeline on push to `main` branch
+- **Path-based triggers**: Only deploys when `src/`, `public/`, `package.json`, `vite.config.js`, or `index.html` change
+- **Instant**: CodeStar webhook triggers immediately (no polling)
 
-## Development
+Changes to `docs/`, `deployment/`, or `README.md` do **not** trigger a deploy.
 
-The site uses a component-based architecture with:
-- Reusable UI components
-- Tailwind CSS for styling
-- Inter font for typography
-- Subtle animations and transitions
+> ⚠️ Pushing to `main` immediately deploys to the live site.
 
-## CI/CD
+### Manual Deploy (Emergency)
 
-Automated deployment via AWS CodePipeline:
-- Push to `main` → Auto-deploy to production
-- Manual staging deployment for testing
-- CodePipeline: `medalfoundation-production-pipeline`
-- CodeBuild: `medalfoundation-frontend-production`
-- GitHub webhook configured ✅
+```bash
+npm run build
+aws s3 sync dist/ s3://medalfoundation-frontend-production --delete
+aws cloudfront create-invalidation --distribution-id E3QDO1V24F450J --paths "/*"
+```
+
+## AWS Resources
+
+| Resource | Value |
+|----------|-------|
+| S3 Bucket | `medalfoundation-frontend-production` |
+| CloudFront | `E3QDO1V24F450J` |
+| Pipeline | `medalfoundation-prod-frontend` |
+| CodeBuild | `medalfoundation-prod-frontend-build` |
+| Domain | `www.medalfoundation.org` + `medalfoundation.org` |
 
 ## License
 
