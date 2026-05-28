@@ -13,7 +13,7 @@ Parameters:
     Default: staging
   FrontendBucket:
     Type: String
-    Default: medalfoundation-frontend-staging
+    Default: medal-stg-frontend
   CloudFrontDistributionId:
     Type: String
     Default: E2T356PZNQLQJQ
@@ -22,7 +22,7 @@ Resources:
   ArtifactBucket:
     Type: AWS::S3::Bucket
     Properties:
-      BucketName: medalfoundation-stg-frontend-artifacts
+      BucketName: medal-stg-frontend-artifacts
       LifecycleConfiguration:
         Rules:
           - Id: CleanupOldArtifacts
@@ -70,7 +70,7 @@ Resources:
   CodeBuildProject:
     Type: AWS::CodeBuild::Project
     Properties:
-      Name: medalfoundation-stg-frontend-build
+      Name: medal-stg-frontend-build
       ServiceRole: !GetAtt CodeBuildRole.Arn
       Artifacts:
         Type: CODEPIPELINE
@@ -138,7 +138,7 @@ Resources:
   Pipeline:
     Type: AWS::CodePipeline::Pipeline
     Properties:
-      Name: medalfoundation-stg-frontend
+      Name: medal-stg-frontend-pipeline
       PipelineType: V2
       RoleArn: !GetAtt PipelineRole.Arn
       ArtifactStore:
